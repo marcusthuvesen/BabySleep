@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IvP-SH-xaZ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sleep Timer PopupUI-->
+        <scene sceneID="Jgj-J8-2gD">
+            <objects>
+                <viewController restorationIdentifier="SleepTimerPopup_UI" storyboardIdentifier="SleepTimerPopup_UI" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="IvP-SH-xaZ" customClass="SleepTimerPopup_UI" customModule="BabySleep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9z-Xw-H5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgT-dY-fS2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M44-jh-OWP">
+                                <rect key="frame" x="40" y="194" width="334" height="508"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYF-Jo-xZi">
+                                        <rect key="frame" x="60" y="428" width="214" height="60"/>
+                                        <color key="backgroundColor" red="0.62745098040000002" green="0.36470588240000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="dIx-Rh-ItD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Set Timer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timerDoneBtn:" destination="IvP-SH-xaZ" eventType="touchUpInside" id="9sB-xt-Fj4"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-xM-0Hd">
+                                        <rect key="frame" x="20" y="120" width="294" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOs-tM-tGe">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="15 min">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shortcutBtns:" destination="IvP-SH-xaZ" eventType="touchUpInside" id="tXC-RD-7ea"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwS-vM-9T3">
+                                                <rect key="frame" x="75.5" y="0.0" width="67.5" height="50"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="30 min">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shortcutBtns:" destination="IvP-SH-xaZ" eventType="touchUpInside" id="qAy-bd-fKt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLu-b9-LTp">
+                                                <rect key="frame" x="151" y="0.0" width="67.5" height="50"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="45 min">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shortcutBtns:" destination="IvP-SH-xaZ" eventType="touchUpInside" id="Tod-tE-Qfk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sof-9e-Omv">
+                                                <rect key="frame" x="226.5" y="0.0" width="67.5" height="50"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="60 min">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shortcutBtns:" destination="IvP-SH-xaZ" eventType="touchUpInside" id="cLl-Xh-BYP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SDO-Ms-onc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-ty-L5k">
+                                        <rect key="frame" x="5" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="XRr-yT-IJ3"/>
+                                            <constraint firstAttribute="width" constant="30" id="zPC-dN-14D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissTimerPopup:" destination="IvP-SH-xaZ" eventType="touchUpInside" id="Jbt-AF-AtC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Sleep Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jP8-iP-RrH">
+                                        <rect key="frame" x="81.5" y="70" width="171.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sLb-d2-dTu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Vg-b7-dM0">
+                                        <rect key="frame" x="0.0" y="180" width="334" height="228"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="590264761.20347404">
+                                            <!--2019-09-15 18:26:01 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                            <!--1970-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="sleepTimeChanged:" destination="IvP-SH-xaZ" eventType="valueChanged" id="dVk-Od-LJv"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Yui-xM-0Hd" firstAttribute="leading" secondItem="M44-jh-OWP" secondAttribute="leading" constant="20" id="19d-lx-gLB"/>
+                                    <constraint firstItem="jP8-iP-RrH" firstAttribute="centerX" secondItem="M44-jh-OWP" secondAttribute="centerX" id="2xb-kQ-Gmh"/>
+                                    <constraint firstItem="cPe-ty-L5k" firstAttribute="top" secondItem="M44-jh-OWP" secondAttribute="top" constant="8" id="8dE-pf-r8h"/>
+                                    <constraint firstItem="6Vg-b7-dM0" firstAttribute="top" secondItem="Yui-xM-0Hd" secondAttribute="bottom" constant="10" id="C1H-bc-Kec"/>
+                                    <constraint firstItem="jP8-iP-RrH" firstAttribute="top" secondItem="M44-jh-OWP" secondAttribute="top" constant="70" id="D1e-ok-YnW"/>
+                                    <constraint firstAttribute="bottom" secondItem="IYF-Jo-xZi" secondAttribute="bottom" constant="20" id="PBc-KI-QzT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yui-xM-0Hd" secondAttribute="trailing" constant="20" id="Uq0-60-5pL"/>
+                                    <constraint firstItem="IYF-Jo-xZi" firstAttribute="leading" secondItem="M44-jh-OWP" secondAttribute="leading" constant="60" id="Z2V-B7-Wzh"/>
+                                    <constraint firstItem="IYF-Jo-xZi" firstAttribute="top" secondItem="6Vg-b7-dM0" secondAttribute="bottom" constant="20" id="b0x-U2-aDC"/>
+                                    <constraint firstItem="cPe-ty-L5k" firstAttribute="leading" secondItem="M44-jh-OWP" secondAttribute="leading" constant="5" id="cSa-yK-U75"/>
+                                    <constraint firstItem="Yui-xM-0Hd" firstAttribute="top" secondItem="jP8-iP-RrH" secondAttribute="bottom" constant="20" id="eJM-t1-MLw"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Vg-b7-dM0" secondAttribute="trailing" id="ilN-j8-D85"/>
+                                    <constraint firstItem="6Vg-b7-dM0" firstAttribute="leading" secondItem="M44-jh-OWP" secondAttribute="leading" id="sLa-7R-zO7"/>
+                                    <constraint firstAttribute="trailing" secondItem="IYF-Jo-xZi" secondAttribute="trailing" constant="60" id="vTa-RR-BjQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcw-QB-t0A">
+                                <rect key="frame" x="157" y="144" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="925-hp-3oq"/>
+                                    <constraint firstAttribute="width" constant="100" id="93x-A8-tm7"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stopwatch2" translatesAutoresizingMaskIntoConstraints="NO" id="5eu-xc-Tm4">
+                                <rect key="frame" x="157" y="144" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.62745098040000002" green="0.36470588240000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LDx-37-BMt"/>
+                                    <constraint firstAttribute="height" constant="100" id="O3H-dR-GUd"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="njP-ek-ehM">
+                                <rect key="frame" x="177" y="174" width="60" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.62745098040000002" green="0.36470588240000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Php-S4-vmG"/>
+                                    <constraint firstAttribute="height" constant="35" id="TWR-II-O59"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5eu-xc-Tm4" firstAttribute="centerX" secondItem="m9z-Xw-H5Y" secondAttribute="centerX" id="SPq-tv-mdh"/>
+                            <constraint firstItem="j2Y-cR-8LJ" firstAttribute="trailing" secondItem="M44-jh-OWP" secondAttribute="trailing" constant="40" id="XUM-p8-yaj"/>
+                            <constraint firstItem="M44-jh-OWP" firstAttribute="centerY" secondItem="m9z-Xw-H5Y" secondAttribute="centerY" id="Z9p-zz-hbo"/>
+                            <constraint firstItem="j2Y-cR-8LJ" firstAttribute="bottom" secondItem="M44-jh-OWP" secondAttribute="bottom" constant="160" id="gaQ-lQ-bs2"/>
+                            <constraint firstItem="Fcw-QB-t0A" firstAttribute="centerX" secondItem="m9z-Xw-H5Y" secondAttribute="centerX" id="h8p-BZ-8Tr"/>
+                            <constraint firstItem="M44-jh-OWP" firstAttribute="leading" secondItem="j2Y-cR-8LJ" secondAttribute="leading" constant="40" id="hbu-QR-Nln"/>
+                            <constraint firstItem="M44-jh-OWP" firstAttribute="top" secondItem="5eu-xc-Tm4" secondAttribute="bottom" constant="-50" id="iku-Fh-x1z"/>
+                            <constraint firstItem="njP-ek-ehM" firstAttribute="centerX" secondItem="m9z-Xw-H5Y" secondAttribute="centerX" id="kGC-Co-N4X"/>
+                            <constraint firstItem="njP-ek-ehM" firstAttribute="top" secondItem="5eu-xc-Tm4" secondAttribute="bottom" constant="-70" id="ojT-si-xEU"/>
+                            <constraint firstItem="Fcw-QB-t0A" firstAttribute="top" secondItem="j2Y-cR-8LJ" secondAttribute="top" constant="100" id="rDM-QN-svh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j2Y-cR-8LJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="sleepTimeLabel" destination="njP-ek-ehM" id="qmL-Jc-3Bk"/>
+                        <outlet property="sleepTimerContainerView" destination="M44-jh-OWP" id="SrS-ZL-TtJ"/>
+                        <outlet property="stopWatchBackgroundView" destination="Fcw-QB-t0A" id="Nvx-d4-HeL"/>
+                        <outlet property="stopWatchImage" destination="5eu-xc-Tm4" id="gXh-YI-eaX"/>
+                        <outlet property="timePickerOutlet" destination="6Vg-b7-dM0" id="85Q-xN-JlA"/>
+                        <outlet property="timerDoneOutlet" destination="IYF-Jo-xZi" id="k60-Uf-gSZ"/>
+                        <outletCollection property="shortcutOutlets" destination="lOs-tM-tGe" collectionClass="NSMutableArray" id="Y2Q-yh-UZ9"/>
+                        <outletCollection property="shortcutOutlets" destination="jwS-vM-9T3" collectionClass="NSMutableArray" id="gpO-nn-So4"/>
+                        <outletCollection property="shortcutOutlets" destination="tLu-b9-LTp" collectionClass="NSMutableArray" id="YvK-l1-EOS"/>
+                        <outletCollection property="shortcutOutlets" destination="Sof-9e-Omv" collectionClass="NSMutableArray" id="Es9-qL-2qD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nw6-lm-PA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stopwatch2" width="128" height="128"/>
+    </resources>
+</document>

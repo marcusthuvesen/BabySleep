@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2526D7BA22F9701C00D70005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526D7B922F9701C00D70005 /* AppDelegate.swift */; };
+		2526D7BF22F9701C00D70005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2526D7BD22F9701C00D70005 /* Main.storyboard */; };
+		2526D7C122F9702500D70005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2526D7C022F9702500D70005 /* Assets.xcassets */; };
+		2526D7C422F9702500D70005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2526D7C222F9702500D70005 /* LaunchScreen.storyboard */; };
+		2526D7CF22FB2BC100D70005 /* Extension_Btn_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526D7CE22FB2BC100D70005 /* Extension_Btn_UI.swift */; };
+		2526D7D122FB2F4700D70005 /* SoundVC_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526D7D022FB2F4700D70005 /* SoundVC_UI.swift */; };
+		2526D7D5230B423500D70005 /* Settings_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526D7D4230B423300D70005 /* Settings_UI.swift */; };
+		2526D7D7230CA5E100D70005 /* PremiumPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2526D7D6230CA5E100D70005 /* PremiumPopup.storyboard */; };
+		2526D7D9230CAAAF00D70005 /* PremiumPopup_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526D7D8230CAAAF00D70005 /* PremiumPopup_UI.swift */; };
+		2529F185233167BD0086A5A2 /* SleepTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F184233167BD0086A5A2 /* SleepTimer.swift */; };
+		2529F187233B9B300086A5A2 /* HideKeyBoardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F186233B9B300086A5A2 /* HideKeyBoardOnTap.swift */; };
+		2529F189233D39F60086A5A2 /* AskForFeedbackPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2529F188233D39F60086A5A2 /* AskForFeedbackPopup.storyboard */; };
+		2529F18B233D3E4D0086A5A2 /* AskForFeedbackUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F18A233D3E4D0086A5A2 /* AskForFeedbackUI.swift */; };
+		2529F18D233E07C40086A5A2 /* About_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F18C233E07C40086A5A2 /* About_UI.swift */; };
+		2529F18F233E17030086A5A2 /* SettingsNavigationController_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F18E233E17030086A5A2 /* SettingsNavigationController_UI.swift */; };
+		2529F191233F69F80086A5A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2529F190233F69F70086A5A2 /* GoogleService-Info.plist */; };
+		2529F193234120B60086A5A2 /* AskForFeedbackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F192234120B60086A5A2 /* AskForFeedbackPresenter.swift */; };
+		2529F1952341268D0086A5A2 /* FirebasePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F1942341268D0086A5A2 /* FirebasePath.swift */; };
+		2529F19723428B8D0086A5A2 /* PresentPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529F19623428B8D0086A5A2 /* PresentPopup.swift */; };
+		253AABFE2316E72A003CEE16 /* PremiumPopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253AABFD2316E72A003CEE16 /* PremiumPopupPresenter.swift */; };
+		253F16D5230D79470070C68F /* Facts_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F16D4230D79470070C68F /* Facts_UI.swift */; };
+		254EA0E8231AAFFA008E2D64 /* AppStoreReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EA0E7231AAFFA008E2D64 /* AppStoreReviewManager.swift */; };
+		254EA0EC231AF82A008E2D64 /* ShareOnSocialMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254EA0EB231AF82A008E2D64 /* ShareOnSocialMedia.swift */; };
+		25777193234A78C600DF5042 /* train.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25777192234A78C600DF5042 /* train.wav */; };
+		25777195234A79DC00DF5042 /* crowd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25777194234A79DC00DF5042 /* crowd.wav */; };
+		25777197234A7E8900DF5042 /* airliner.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25777196234A7E8900DF5042 /* airliner.wav */; };
+		25777199234A838600DF5042 /* highway.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25777198234A838600DF5042 /* highway.wav */; };
+		2577719D234A949800DF5042 /* coffee.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2577719C234A949800DF5042 /* coffee.wav */; };
+		2577719F234A984600DF5042 /* city.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2577719E234A984600DF5042 /* city.wav */; };
+		257771A1234BCEEE00DF5042 /* bird.wav in Resources */ = {isa = PBXBuildFile; fileRef = 257771A0234BCEED00DF5042 /* bird.wav */; };
+		257771A3234BD02000DF5042 /* wind.wav in Resources */ = {isa = PBXBuildFile; fileRef = 257771A2234BD01F00DF5042 /* wind.wav */; };
+		257771A5234BD02D00DF5042 /* waterfall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 257771A4234BD02D00DF5042 /* waterfall.wav */; };
+		257771A7234BD14300DF5042 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 257771A6234BD14300DF5042 /* cat.wav */; };
+		257771A9234BD17C00DF5042 /* seagull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 257771A8234BD17C00DF5042 /* seagull.wav */; };
+		257771AB234BD50600DF5042 /* snow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 257771AA234BD50600DF5042 /* snow.wav */; };
+		2581C22D231EAB0E00A99EE4 /* PlayBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2581C22C231EAB0E00A99EE4 /* PlayBarView.xib */; };
+		2581C22F231EAC9500A99EE4 /* PlayBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581C22E231EAC9500A99EE4 /* PlayBar.swift */; };
+		2581C233231FB9E400A99EE4 /* SoundLibrary.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2581C232231FB9E400A99EE4 /* SoundLibrary.xcassets */; };
+		2581C237231FC26300A99EE4 /* waves.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2581C239231FC26300A99EE4 /* waves.wav */; };
+		2581C23D231FC44300A99EE4 /* rain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2581C23A231FC44000A99EE4 /* rain.wav */; };
+		2581C23E231FC44300A99EE4 /* thunder.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2581C23B231FC44200A99EE4 /* thunder.wav */; };
+		2581C23F231FC44300A99EE4 /* fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2581C23C231FC44300A99EE4 /* fire.wav */; };
+		2581C241231FC6CF00A99EE4 /* cicadas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2581C240231FC6CF00A99EE4 /* cicadas.wav */; };
+		2581C243231FC70500A99EE4 /* beachWaves.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2581C242231FC70500A99EE4 /* beachWaves.wav */; };
+		2581C245232100D900A99EE4 /* SoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581C244232100D900A99EE4 /* SoundPresenter.swift */; };
+		2581C24723210D5900A99EE4 /* AudioFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581C24623210D5900A99EE4 /* AudioFiles.swift */; };
+		2581C2492326E11700A99EE4 /* SoundsCurrentlyPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581C2482326E11700A99EE4 /* SoundsCurrentlyPlaying.swift */; };
+		2581C27E232EB79200A99EE4 /* SleepTimerPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2581C27D232EB79200A99EE4 /* SleepTimerPopup.storyboard */; };
+		2581C280232EBEE500A99EE4 /* SleepTimerPopup_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581C27F232EBEE500A99EE4 /* SleepTimerPopup_UI.swift */; };
+		2581C282232F800800A99EE4 /* SleepTimerPopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2581C281232F800800A99EE4 /* SleepTimerPopupPresenter.swift */; };
+		2586C566231941D300D960A5 /* FactsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2586C565231941D200D960A5 /* FactsPresenter.swift */; };
+		258931832311226B00435B69 /* PopupCollectionView_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258931822311226B00435B69 /* PopupCollectionView_UI.swift */; };
+		258931852313D77F00435B69 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258931842313D77F00435B69 /* CustomColors.swift */; };
+		259B31FF2319265D00878567 /* FactsTextInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259B31FE2319265D00878567 /* FactsTextInfo.swift */; };
+		25BFE61423191579000EB41C /* SpecificFact_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BFE61323191579000EB41C /* SpecificFact_UI.swift */; };
+		25C97755230F3C12000D0607 /* PopupSlider_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C97754230F3C12000D0607 /* PopupSlider_CollectionViewCell.swift */; };
+		B7892B66EA11DD2C972F9A6D /* Pods_BabySleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5B1E2E67D84BFAB497D47C /* Pods_BabySleep.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2581C264232C26A800A99EE4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12E2057829469CCA12599289 /* Pods-BabySleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.debug.xcconfig"; sourceTree = "<group>"; };
+		2526D7B622F9701C00D70005 /* BabySleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabySleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2526D7B922F9701C00D70005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2526D7BE22F9701C00D70005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2526D7C022F9702500D70005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2526D7C322F9702500D70005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2526D7C522F9702500D70005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2526D7CE22FB2BC100D70005 /* Extension_Btn_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Btn_UI.swift; sourceTree = "<group>"; };
+		2526D7D022FB2F4700D70005 /* SoundVC_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundVC_UI.swift; sourceTree = "<group>"; };
+		2526D7D4230B423300D70005 /* Settings_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings_UI.swift; sourceTree = "<group>"; };
+		2526D7D6230CA5E100D70005 /* PremiumPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PremiumPopup.storyboard; sourceTree = "<group>"; };
+		2526D7D8230CAAAF00D70005 /* PremiumPopup_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumPopup_UI.swift; sourceTree = "<group>"; };
+		2529F184233167BD0086A5A2 /* SleepTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimer.swift; sourceTree = "<group>"; };
+		2529F186233B9B300086A5A2 /* HideKeyBoardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HideKeyBoardOnTap.swift; path = ../HideKeyBoardOnTap.swift; sourceTree = "<group>"; };
+		2529F188233D39F60086A5A2 /* AskForFeedbackPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AskForFeedbackPopup.storyboard; sourceTree = "<group>"; };
+		2529F18A233D3E4D0086A5A2 /* AskForFeedbackUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForFeedbackUI.swift; sourceTree = "<group>"; };
+		2529F18C233E07C40086A5A2 /* About_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About_UI.swift; sourceTree = "<group>"; };
+		2529F18E233E17030086A5A2 /* SettingsNavigationController_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController_UI.swift; sourceTree = "<group>"; };
+		2529F190233F69F70086A5A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2529F192234120B60086A5A2 /* AskForFeedbackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForFeedbackPresenter.swift; sourceTree = "<group>"; };
+		2529F1942341268D0086A5A2 /* FirebasePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebasePath.swift; path = ../FirebasePath.swift; sourceTree = "<group>"; };
+		2529F19623428B8D0086A5A2 /* PresentPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresentPopup.swift; path = ../PresentPopup.swift; sourceTree = "<group>"; };
+		253AABFD2316E72A003CEE16 /* PremiumPopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumPopupPresenter.swift; sourceTree = "<group>"; };
+		253F16D4230D79470070C68F /* Facts_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facts_UI.swift; sourceTree = "<group>"; };
+		254EA0E7231AAFFA008E2D64 /* AppStoreReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppStoreReviewManager.swift; path = ../AppStoreReviewManager.swift; sourceTree = "<group>"; };
+		254EA0EB231AF82A008E2D64 /* ShareOnSocialMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShareOnSocialMedia.swift; path = ../ShareOnSocialMedia.swift; sourceTree = "<group>"; };
+		25777192234A78C600DF5042 /* train.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = train.wav; sourceTree = "<group>"; };
+		25777194234A79DC00DF5042 /* crowd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crowd.wav; sourceTree = "<group>"; };
+		25777196234A7E8900DF5042 /* airliner.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = airliner.wav; sourceTree = "<group>"; };
+		25777198234A838600DF5042 /* highway.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = highway.wav; sourceTree = "<group>"; };
+		2577719C234A949800DF5042 /* coffee.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coffee.wav; sourceTree = "<group>"; };
+		2577719E234A984600DF5042 /* city.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = city.wav; sourceTree = "<group>"; };
+		257771A0234BCEED00DF5042 /* bird.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bird.wav; sourceTree = "<group>"; };
+		257771A2234BD01F00DF5042 /* wind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wind.wav; sourceTree = "<group>"; };
+		257771A4234BD02D00DF5042 /* waterfall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = waterfall.wav; sourceTree = "<group>"; };
+		257771A6234BD14300DF5042 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
+		257771A8234BD17C00DF5042 /* seagull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = seagull.wav; sourceTree = "<group>"; };
+		257771AA234BD50600DF5042 /* snow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snow.wav; sourceTree = "<group>"; };
+		2581C22C231EAB0E00A99EE4 /* PlayBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayBarView.xib; sourceTree = "<group>"; };
+		2581C22E231EAC9500A99EE4 /* PlayBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBar.swift; sourceTree = "<group>"; };
+		2581C232231FB9E400A99EE4 /* SoundLibrary.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SoundLibrary.xcassets; sourceTree = "<group>"; };
+		2581C238231FC26300A99EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Base; path = Base.lproj/waves.wav; sourceTree = "<group>"; };
+		2581C23A231FC44000A99EE4 /* rain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rain.wav; sourceTree = "<group>"; };
+		2581C23B231FC44200A99EE4 /* thunder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thunder.wav; sourceTree = "<group>"; };
+		2581C23C231FC44300A99EE4 /* fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire.wav; sourceTree = "<group>"; };
+		2581C240231FC6CF00A99EE4 /* cicadas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cicadas.wav; sourceTree = "<group>"; };
+		2581C242231FC70500A99EE4 /* beachWaves.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beachWaves.wav; sourceTree = "<group>"; };
+		2581C244232100D900A99EE4 /* SoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPresenter.swift; sourceTree = "<group>"; };
+		2581C24623210D5900A99EE4 /* AudioFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFiles.swift; sourceTree = "<group>"; };
+		2581C2482326E11700A99EE4 /* SoundsCurrentlyPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsCurrentlyPlaying.swift; sourceTree = "<group>"; };
+		2581C255232C26A800A99EE4 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2581C27D232EB79200A99EE4 /* SleepTimerPopup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SleepTimerPopup.storyboard; sourceTree = "<group>"; };
+		2581C27F232EBEE500A99EE4 /* SleepTimerPopup_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimerPopup_UI.swift; sourceTree = "<group>"; };
+		2581C281232F800800A99EE4 /* SleepTimerPopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimerPopupPresenter.swift; sourceTree = "<group>"; };
+		2586C565231941D200D960A5 /* FactsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsPresenter.swift; sourceTree = "<group>"; };
+		258931822311226B00435B69 /* PopupCollectionView_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCollectionView_UI.swift; sourceTree = "<group>"; };
+		258931842313D77F00435B69 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		259B31FE2319265D00878567 /* FactsTextInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsTextInfo.swift; sourceTree = "<group>"; };
+		25BFE61323191579000EB41C /* SpecificFact_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificFact_UI.swift; sourceTree = "<group>"; };
+		25C97754230F3C12000D0607 /* PopupSlider_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSlider_CollectionViewCell.swift; sourceTree = "<group>"; };
+		8F5B1E2E67D84BFAB497D47C /* Pods_BabySleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabySleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E1F772CAED55A54270729F /* Pods-BabySleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabySleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabySleep/Pods-BabySleep.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2526D7B322F9701C00D70005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7892B66EA11DD2C972F9A6D /* Pods_BabySleep.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBC9641A4AE277DAECD284F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12E2057829469CCA12599289 /* Pods-BabySleep.debug.xcconfig */,
+				C0E1F772CAED55A54270729F /* Pods-BabySleep.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2526D7AD22F9701C00D70005 = {
+			isa = PBXGroup;
+			children = (
+				2526D7B822F9701C00D70005 /* BabySleep */,
+				2526D7B722F9701C00D70005 /* Products */,
+				0BBC9641A4AE277DAECD284F /* Pods */,
+				8D68ECF57F82A863F9E4C32B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2526D7B722F9701C00D70005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2526D7B622F9701C00D70005 /* BabySleep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2526D7B822F9701C00D70005 /* BabySleep */ = {
+			isa = PBXGroup;
+			children = (
+				2581C236231FC1FF00A99EE4 /* SoundFiles */,
+				2526D7C522F9702500D70005 /* Info.plist */,
+				2529F190233F69F70086A5A2 /* GoogleService-Info.plist */,
+				2529F184233167BD0086A5A2 /* SleepTimer.swift */,
+				2581C2482326E11700A99EE4 /* SoundsCurrentlyPlaying.swift */,
+				2581C22E231EAC9500A99EE4 /* PlayBar.swift */,
+				2526D7C022F9702500D70005 /* Assets.xcassets */,
+				25C97752230F0A2E000D0607 /* SupportFiles */,
+				2526D7CB22FB24EB00D70005 /* Models */,
+				2526D7CC22FB24F200D70005 /* Views */,
+				2526D7CD22FB24F900D70005 /* Presenters */,
+			);
+			path = BabySleep;
+			sourceTree = "<group>";
+		};
+		2526D7CB22FB24EB00D70005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				258931842313D77F00435B69 /* CustomColors.swift */,
+				259B31FE2319265D00878567 /* FactsTextInfo.swift */,
+				2581C24623210D5900A99EE4 /* AudioFiles.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2526D7CC22FB24F200D70005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25C97753230F1247000D0607 /* Storyboards */,
+				2529F18A233D3E4D0086A5A2 /* AskForFeedbackUI.swift */,
+				2581C27F232EBEE500A99EE4 /* SleepTimerPopup_UI.swift */,
+				2526D7D8230CAAAF00D70005 /* PremiumPopup_UI.swift */,
+				258931822311226B00435B69 /* PopupCollectionView_UI.swift */,
+				25C97754230F3C12000D0607 /* PopupSlider_CollectionViewCell.swift */,
+				2526D7CE22FB2BC100D70005 /* Extension_Btn_UI.swift */,
+				2526D7D022FB2F4700D70005 /* SoundVC_UI.swift */,
+				2526D7D4230B423300D70005 /* Settings_UI.swift */,
+				253F16D4230D79470070C68F /* Facts_UI.swift */,
+				25BFE61323191579000EB41C /* SpecificFact_UI.swift */,
+				2529F18C233E07C40086A5A2 /* About_UI.swift */,
+				2529F18E233E17030086A5A2 /* SettingsNavigationController_UI.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2526D7CD22FB24F900D70005 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2581C281232F800800A99EE4 /* SleepTimerPopupPresenter.swift */,
+				2581C244232100D900A99EE4 /* SoundPresenter.swift */,
+				253AABFD2316E72A003CEE16 /* PremiumPopupPresenter.swift */,
+				2586C565231941D200D960A5 /* FactsPresenter.swift */,
+				2529F192234120B60086A5A2 /* AskForFeedbackPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2581C236231FC1FF00A99EE4 /* SoundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2581C23A231FC44000A99EE4 /* rain.wav */,
+				2581C239231FC26300A99EE4 /* waves.wav */,
+				2581C23C231FC44300A99EE4 /* fire.wav */,
+				2581C242231FC70500A99EE4 /* beachWaves.wav */,
+				2581C23B231FC44200A99EE4 /* thunder.wav */,
+				2581C240231FC6CF00A99EE4 /* cicadas.wav */,
+				25777192234A78C600DF5042 /* train.wav */,
+				25777194234A79DC00DF5042 /* crowd.wav */,
+				25777196234A7E8900DF5042 /* airliner.wav */,
+				25777198234A838600DF5042 /* highway.wav */,
+				2577719E234A984600DF5042 /* city.wav */,
+				2577719C234A949800DF5042 /* coffee.wav */,
+				257771A0234BCEED00DF5042 /* bird.wav */,
+				257771A2234BD01F00DF5042 /* wind.wav */,
+				257771A4234BD02D00DF5042 /* waterfall.wav */,
+				257771A6234BD14300DF5042 /* cat.wav */,
+				257771A8234BD17C00DF5042 /* seagull.wav */,
+				257771AA234BD50600DF5042 /* snow.wav */,
+			);
+			path = SoundFiles;
+			sourceTree = "<group>";
+		};
+		25C97752230F0A2E000D0607 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2581C232231FB9E400A99EE4 /* SoundLibrary.xcassets */,
+				2526D7B922F9701C00D70005 /* AppDelegate.swift */,
+				254EA0EB231AF82A008E2D64 /* ShareOnSocialMedia.swift */,
+				2529F186233B9B300086A5A2 /* HideKeyBoardOnTap.swift */,
+				254EA0E7231AAFFA008E2D64 /* AppStoreReviewManager.swift */,
+				2529F1942341268D0086A5A2 /* FirebasePath.swift */,
+				2529F19623428B8D0086A5A2 /* PresentPopup.swift */,
+				2526D7C222F9702500D70005 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		25C97753230F1247000D0607 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2526D7D6230CA5E100D70005 /* PremiumPopup.storyboard */,
+				2581C27D232EB79200A99EE4 /* SleepTimerPopup.storyboard */,
+				2526D7BD22F9701C00D70005 /* Main.storyboard */,
+				2581C22C231EAB0E00A99EE4 /* PlayBarView.xib */,
+				2529F188233D39F60086A5A2 /* AskForFeedbackPopup.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8D68ECF57F82A863F9E4C32B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2581C255232C26A800A99EE4 /* NotificationCenter.framework */,
+				8F5B1E2E67D84BFAB497D47C /* Pods_BabySleep.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2526D7B522F9701C00D70005 /* BabySleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2526D7C822F9702500D70005 /* Build configuration list for PBXNativeTarget "BabySleep" */;
+			buildPhases = (
+				6C3D5B5D4272F703F975BE27 /* [CP] Check Pods Manifest.lock */,
+				2526D7B222F9701C00D70005 /* Sources */,
+				2526D7B322F9701C00D70005 /* Frameworks */,
+				2526D7B422F9701C00D70005 /* Resources */,
+				A993F4B8860A5607579C995C /* [CP] Embed Pods Frameworks */,
+				2581C264232C26A800A99EE4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabySleep;
+			productName = Tinnitus;
+			productReference = 2526D7B622F9701C00D70005 /* BabySleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2526D7AE22F9701C00D70005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Marcus Thuvesen";
+				TargetAttributes = {
+					2526D7B522F9701C00D70005 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2526D7B122F9701C00D70005 /* Build configuration list for PBXProject "BabySleep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2526D7AD22F9701C00D70005;
+			productRefGroup = 2526D7B722F9701C00D70005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2526D7B522F9701C00D70005 /* BabySleep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2526D7B422F9701C00D70005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2581C23D231FC44300A99EE4 /* rain.wav in Resources */,
+				25777199234A838600DF5042 /* highway.wav in Resources */,
+				2526D7C422F9702500D70005 /* LaunchScreen.storyboard in Resources */,
+				2581C23E231FC44300A99EE4 /* thunder.wav in Resources */,
+				2526D7D7230CA5E100D70005 /* PremiumPopup.storyboard in Resources */,
+				257771A3234BD02000DF5042 /* wind.wav in Resources */,
+				2581C237231FC26300A99EE4 /* waves.wav in Resources */,
+				2581C243231FC70500A99EE4 /* beachWaves.wav in Resources */,
+				2529F189233D39F60086A5A2 /* AskForFeedbackPopup.storyboard in Resources */,
+				2581C23F231FC44300A99EE4 /* fire.wav in Resources */,
+				257771AB234BD50600DF5042 /* snow.wav in Resources */,
+				2581C22D231EAB0E00A99EE4 /* PlayBarView.xib in Resources */,
+				2526D7C122F9702500D70005 /* Assets.xcassets in Resources */,
+				25777195234A79DC00DF5042 /* crowd.wav in Resources */,
+				2526D7BF22F9701C00D70005 /* Main.storyboard in Resources */,
+				2577719D234A949800DF5042 /* coffee.wav in Resources */,
+				2529F191233F69F80086A5A2 /* GoogleService-Info.plist in Resources */,
+				25777197234A7E8900DF5042 /* airliner.wav in Resources */,
+				2581C233231FB9E400A99EE4 /* SoundLibrary.xcassets in Resources */,
+				2581C241231FC6CF00A99EE4 /* cicadas.wav in Resources */,
+				257771A9234BD17C00DF5042 /* seagull.wav in Resources */,
+				2577719F234A984600DF5042 /* city.wav in Resources */,
+				257771A1234BCEEE00DF5042 /* bird.wav in Resources */,
+				2581C27E232EB79200A99EE4 /* SleepTimerPopup.storyboard in Resources */,
+				257771A7234BD14300DF5042 /* cat.wav in Resources */,
+				25777193234A78C600DF5042 /* train.wav in Resources */,
+				257771A5234BD02D00DF5042 /* waterfall.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C3D5B5D4272F703F975BE27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BabySleep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A993F4B8860A5607579C995C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabySleep/Pods-BabySleep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2526D7B222F9701C00D70005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2526D7D122FB2F4700D70005 /* SoundVC_UI.swift in Sources */,
+				2581C280232EBEE500A99EE4 /* SleepTimerPopup_UI.swift in Sources */,
+				254EA0E8231AAFFA008E2D64 /* AppStoreReviewManager.swift in Sources */,
+				2529F1952341268D0086A5A2 /* FirebasePath.swift in Sources */,
+				258931832311226B00435B69 /* PopupCollectionView_UI.swift in Sources */,
+				259B31FF2319265D00878567 /* FactsTextInfo.swift in Sources */,
+				2529F18F233E17030086A5A2 /* SettingsNavigationController_UI.swift in Sources */,
+				2581C282232F800800A99EE4 /* SleepTimerPopupPresenter.swift in Sources */,
+				2529F19723428B8D0086A5A2 /* PresentPopup.swift in Sources */,
+				254EA0EC231AF82A008E2D64 /* ShareOnSocialMedia.swift in Sources */,
+				2526D7BA22F9701C00D70005 /* AppDelegate.swift in Sources */,
+				2529F18B233D3E4D0086A5A2 /* AskForFeedbackUI.swift in Sources */,
+				25C97755230F3C12000D0607 /* PopupSlider_CollectionViewCell.swift in Sources */,
+				25BFE61423191579000EB41C /* SpecificFact_UI.swift in Sources */,
+				2581C2492326E11700A99EE4 /* SoundsCurrentlyPlaying.swift in Sources */,
+				258931852313D77F00435B69 /* CustomColors.swift in Sources */,
+				2581C24723210D5900A99EE4 /* AudioFiles.swift in Sources */,
+				2526D7CF22FB2BC100D70005 /* Extension_Btn_UI.swift in Sources */,
+				2529F18D233E07C40086A5A2 /* About_UI.swift in Sources */,
+				253F16D5230D79470070C68F /* Facts_UI.swift in Sources */,
+				2526D7D9230CAAAF00D70005 /* PremiumPopup_UI.swift in Sources */,
+				2581C22F231EAC9500A99EE4 /* PlayBar.swift in Sources */,
+				2526D7D5230B423500D70005 /* Settings_UI.swift in Sources */,
+				253AABFE2316E72A003CEE16 /* PremiumPopupPresenter.swift in Sources */,
+				2529F187233B9B300086A5A2 /* HideKeyBoardOnTap.swift in Sources */,
+				2529F193234120B60086A5A2 /* AskForFeedbackPresenter.swift in Sources */,
+				2586C566231941D300D960A5 /* FactsPresenter.swift in Sources */,
+				2529F185233167BD0086A5A2 /* SleepTimer.swift in Sources */,
+				2581C245232100D900A99EE4 /* SoundPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2526D7BD22F9701C00D70005 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2526D7BE22F9701C00D70005 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2526D7C222F9702500D70005 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2526D7C322F9702500D70005 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2581C239231FC26300A99EE4 /* waves.wav */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2581C238231FC26300A99EE4 /* Base */,
+			);
+			name = waves.wav;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2526D7C622F9702500D70005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BabySleep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2526D7C722F9702500D70005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BabySleep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2526D7C922F9702500D70005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E2057829469CCA12599289 /* Pods-BabySleep.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CTKXD59TF;
+				INFOPLIST_FILE = BabySleep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.marcusthuvesen.BabySleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2526D7CA22F9702500D70005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E1F772CAED55A54270729F /* Pods-BabySleep.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CTKXD59TF;
+				INFOPLIST_FILE = BabySleep/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.marcusthuvesen.BabySleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2526D7B122F9701C00D70005 /* Build configuration list for PBXProject "BabySleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2526D7C622F9702500D70005 /* Debug */,
+				2526D7C722F9702500D70005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2526D7C822F9702500D70005 /* Build configuration list for PBXNativeTarget "BabySleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2526D7C922F9702500D70005 /* Debug */,
+				2526D7CA22F9702500D70005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2526D7AE22F9701C00D70005 /* Project object */;
+}
