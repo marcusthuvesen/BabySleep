@@ -832,36 +832,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4x-rP-3a7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxe-qt-kLU">
-                                        <rect key="frame" x="0.0" y="94" width="414" height="1"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="pM7-Pe-hDd"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinAid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32d-5i-zJD">
-                                        <rect key="frame" x="165" y="35" width="84.5" height="48"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Uxe-qt-kLU" firstAttribute="leading" secondItem="l4x-rP-3a7" secondAttribute="leading" id="9er-KZ-U14"/>
-                                    <constraint firstItem="32d-5i-zJD" firstAttribute="top" secondItem="l4x-rP-3a7" secondAttribute="top" constant="35" id="Jxt-zR-8LT"/>
-                                    <constraint firstAttribute="trailing" secondItem="Uxe-qt-kLU" secondAttribute="trailing" id="KYm-nv-g08"/>
-                                    <constraint firstAttribute="bottom" secondItem="Uxe-qt-kLU" secondAttribute="bottom" id="V04-3o-s9j"/>
-                                    <constraint firstItem="32d-5i-zJD" firstAttribute="centerX" secondItem="l4x-rP-3a7" secondAttribute="centerX" id="nzI-4Z-mQ0"/>
-                                    <constraint firstAttribute="height" constant="95" id="rfk-mH-RTy"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="918-MC-GE9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41y-Aa-GKP">
-                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-2a-BgU">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
@@ -873,7 +849,7 @@
                                                     <constraint firstAttribute="height" constant="60" id="3Gl-IQ-caE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <state key="normal" title="Get TinAid Premium">
+                                                <state key="normal" title="Get BabySleep Premium">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1029,7 +1005,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-vl-Vrq">
                                                                 <rect key="frame" x="8" y="1" width="382" height="59"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <state key="normal" title="Share TinAid">
+                                                                <state key="normal" title="Share BabySleep">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -1091,14 +1067,11 @@
                                                     <constraint firstAttribute="height" constant="1" id="0W8-tM-gFJ"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinAid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93E-oI-cPb">
-                                                <rect key="frame" x="171.5" y="619" width="71" height="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BabySleep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93E-oI-cPb">
+                                                <rect key="frame" x="157" y="619" width="100" height="40"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="71" id="Lto-iC-WoP"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="NQu-WP-PM1"/>
                                                     <constraint firstAttribute="height" constant="40" id="eik-z4-E7u"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="l85-XL-BLo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1151,17 +1124,18 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.015686274510000001" green="0.039215686270000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.95294117649999999" green="0.32549019610000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="l4x-rP-3a7" firstAttribute="top" secondItem="xtj-Xs-96K" secondAttribute="top" id="0JZ-Gt-t67"/>
-                            <constraint firstItem="l4x-rP-3a7" firstAttribute="leading" secondItem="BJh-1x-OXK" secondAttribute="leading" id="8G6-Sr-qeP"/>
+                            <constraint firstItem="918-MC-GE9" firstAttribute="leading" secondItem="BJh-1x-OXK" secondAttribute="leading" id="57L-Q5-sAF"/>
+                            <constraint firstItem="BJh-1x-OXK" firstAttribute="trailing" secondItem="918-MC-GE9" secondAttribute="trailing" id="5ZH-wU-soa"/>
+                            <constraint firstItem="BJh-1x-OXK" firstAttribute="bottom" secondItem="918-MC-GE9" secondAttribute="bottom" id="5uo-sp-rhp"/>
                             <constraint firstItem="YiQ-4R-LVy" firstAttribute="trailing" secondItem="BJh-1x-OXK" secondAttribute="trailing" id="IUz-5B-c0Z"/>
                             <constraint firstItem="BJh-1x-OXK" firstAttribute="bottom" secondItem="41y-Aa-GKP" secondAttribute="bottom" id="IpF-fx-V38"/>
                             <constraint firstItem="YiQ-4R-LVy" firstAttribute="leading" secondItem="BJh-1x-OXK" secondAttribute="leading" id="Jx8-7o-0Pq"/>
+                            <constraint firstItem="918-MC-GE9" firstAttribute="top" secondItem="xtj-Xs-96K" secondAttribute="top" id="RQT-TI-t5a"/>
+                            <constraint firstItem="41y-Aa-GKP" firstAttribute="top" secondItem="BJh-1x-OXK" secondAttribute="top" id="TSt-CX-bbc"/>
                             <constraint firstItem="BJh-1x-OXK" firstAttribute="trailing" secondItem="41y-Aa-GKP" secondAttribute="trailing" id="YrL-dv-KMS"/>
-                            <constraint firstItem="41y-Aa-GKP" firstAttribute="top" secondItem="l4x-rP-3a7" secondAttribute="bottom" id="ciE-xw-Wht"/>
-                            <constraint firstItem="l4x-rP-3a7" firstAttribute="trailing" secondItem="BJh-1x-OXK" secondAttribute="trailing" id="dBr-KL-REL"/>
                             <constraint firstItem="BJh-1x-OXK" firstAttribute="bottom" secondItem="YiQ-4R-LVy" secondAttribute="bottom" id="khU-C7-5Y8"/>
                             <constraint firstItem="41y-Aa-GKP" firstAttribute="leading" secondItem="BJh-1x-OXK" secondAttribute="leading" id="y4X-Sf-TXQ"/>
                         </constraints>
@@ -1169,6 +1143,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Q6j-Ce-Awj"/>
                     <connections>
+                        <outlet property="bgGradientSettingsView" destination="918-MC-GE9" id="uyT-6M-hGb"/>
                         <outlet property="settingsPremiumOutlet" destination="lD2-4W-uEQ" id="nvS-6Y-5bC"/>
                     </connections>
                 </viewController>
@@ -1253,69 +1228,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohq-k8-OZK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LW5-0r-5hJ">
-                                        <rect key="frame" x="0.0" y="94" width="414" height="1"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="Q9e-oK-UIC"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinAid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q33-Gb-lh3">
-                                        <rect key="frame" x="165" y="35" width="84.5" height="48"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.070588235289999995" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="LW5-0r-5hJ" secondAttribute="trailing" id="Q37-2G-hbC"/>
-                                    <constraint firstItem="q33-Gb-lh3" firstAttribute="centerX" secondItem="Ohq-k8-OZK" secondAttribute="centerX" id="bqS-Wp-RFr"/>
-                                    <constraint firstItem="q33-Gb-lh3" firstAttribute="top" secondItem="Ohq-k8-OZK" secondAttribute="top" constant="35" id="p43-Wv-M2S"/>
-                                    <constraint firstItem="LW5-0r-5hJ" firstAttribute="leading" secondItem="Ohq-k8-OZK" secondAttribute="leading" id="qDD-5p-s94"/>
-                                    <constraint firstAttribute="height" constant="95" id="qFm-Qo-o96"/>
-                                    <constraint firstAttribute="bottom" secondItem="LW5-0r-5hJ" secondAttribute="bottom" id="wqK-gI-zy0"/>
-                                </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-uJ-Db1">
-                                <rect key="frame" x="0.0" y="95" width="414" height="712"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-uJ-Db1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="807"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgn-Bf-Wfq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <state key="normal" title="The cause of tinnitus" backgroundImage="background1"/>
+                                        <state key="normal" title="Make your baby tired" backgroundImage="background8"/>
                                         <connections>
                                             <action selector="firstFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="Yu6-UF-8hk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-Oc-mac">
-                                        <rect key="frame" x="0.0" y="178" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="202" width="414" height="201"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <state key="normal" title="To live with tinnitus" backgroundImage="background5"/>
+                                        <state key="normal" title="Ways to put baby to sleep" backgroundImage="background9"/>
                                         <connections>
                                             <action selector="secondFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="dB3-kR-zeY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4i-Dj-pJY">
-                                        <rect key="frame" x="0.0" y="356" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="404" width="414" height="201"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <state key="normal" title="Can it be cured?" backgroundImage="background6"/>
+                                        <state key="normal" title="Helping baby sleeping through the night" backgroundImage="background10"/>
                                         <connections>
                                             <action selector="thirdFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="H6R-Rd-ltJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-G2-BpK">
-                                        <rect key="frame" x="0.0" y="534" width="414" height="178"/>
+                                        <rect key="frame" x="0.0" y="606" width="414" height="201"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <state key="normal" title="Prevent more tinnitus" backgroundImage="background7"/>
+                                        <state key="normal" title="Make baby sleep longer" backgroundImage="background11"/>
                                         <connections>
                                             <action selector="fourthFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="qYS-Ij-Nnv"/>
                                         </connections>
@@ -1333,16 +1280,13 @@
                         <color key="backgroundColor" red="0.015686274510000001" green="0.039215686270000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.95294117649999999" green="0.32549019610000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ohq-k8-OZK" firstAttribute="trailing" secondItem="DCM-cs-xSH" secondAttribute="trailing" id="Gqw-ar-eFB"/>
                             <constraint firstItem="DCM-cs-xSH" firstAttribute="trailing" secondItem="Afc-uJ-Db1" secondAttribute="trailing" id="Ha0-7U-Bsd"/>
-                            <constraint firstItem="Ohq-k8-OZK" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="Nbj-Ak-AAg"/>
                             <constraint firstItem="jYx-mN-CWu" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="Omp-9p-RbL"/>
                             <constraint firstItem="jYx-mN-CWu" firstAttribute="trailing" secondItem="DCM-cs-xSH" secondAttribute="trailing" id="Y5F-Wa-ASq"/>
                             <constraint firstItem="DCM-cs-xSH" firstAttribute="bottom" secondItem="jYx-mN-CWu" secondAttribute="bottom" id="meL-Wb-KQN"/>
-                            <constraint firstItem="Ohq-k8-OZK" firstAttribute="top" secondItem="CPP-uu-UJ9" secondAttribute="top" id="nlD-s2-VST"/>
                             <constraint firstItem="Afc-uJ-Db1" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="oWg-ov-qgy"/>
                             <constraint firstItem="jYx-mN-CWu" firstAttribute="top" secondItem="Afc-uJ-Db1" secondAttribute="bottom" id="qPn-cb-His"/>
-                            <constraint firstItem="Afc-uJ-Db1" firstAttribute="top" secondItem="Ohq-k8-OZK" secondAttribute="bottom" id="tiH-s5-r9d"/>
+                            <constraint firstItem="Afc-uJ-Db1" firstAttribute="top" secondItem="CPP-uu-UJ9" secondAttribute="top" id="u6f-he-vxk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DCM-cs-xSH"/>
                     </view>
@@ -1589,10 +1533,10 @@
     <resources>
         <image name="airliner" width="64" height="64"/>
         <image name="babys" width="190" height="103"/>
-        <image name="background1" width="259" height="110"/>
-        <image name="background5" width="424" height="211"/>
-        <image name="background6" width="562" height="182"/>
-        <image name="background7" width="622" height="221"/>
+        <image name="background10" width="3816" height="1504"/>
+        <image name="background11" width="3816" height="1504"/>
+        <image name="background8" width="3816" height="1504"/>
+        <image name="background9" width="3816" height="1504"/>
         <image name="bird" width="64" height="64"/>
         <image name="cat" width="64" height="64"/>
         <image name="cicada" width="64" height="64"/>

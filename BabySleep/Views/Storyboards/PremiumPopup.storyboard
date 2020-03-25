@@ -13,7 +13,7 @@
         <!--Premium PopupUI-->
         <scene sceneID="iUW-tk-6El">
             <objects>
-                <viewController storyboardIdentifier="PremiumPopup_UI" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="59c-xY-qYI" customClass="PremiumPopup_UI" customModule="Tinnitus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PremiumPopup_UI" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="59c-xY-qYI" customClass="PremiumPopup_UI" customModule="BabySleep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zdq-hb-2N3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,8 +300,8 @@
                                                     <action selector="dismissPopupBtn:" destination="59c-xY-qYI" eventType="touchUpInside" id="6Bu-ED-V1T"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get TinAid Premium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDU-E7-AHv">
-                                                <rect key="frame" x="78.5" y="65" width="217" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get BabySleep Premium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDU-E7-AHv">
+                                                <rect key="frame" x="55" y="65" width="264" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -316,7 +316,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PopupCV_Cell" id="RAV-wQ-AVW" customClass="PopupSlider_CollectionViewCell" customModule="Tinnitus" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PopupCV_Cell" id="RAV-wQ-AVW" customClass="PopupSlider_CollectionViewCell" customModule="BabySleep" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="11" width="374" height="300"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -375,7 +375,7 @@
                                                 </constraints>
                                             </pageControl>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="xdN-Sh-Okw" secondAttribute="trailing" id="4ER-e8-8zy"/>
                                             <constraint firstItem="cRZ-0X-N5Z" firstAttribute="leading" secondItem="O4e-Na-dSR" secondAttribute="leading" constant="5" id="ZHh-pa-pOD"/>

@@ -129,7 +129,7 @@ class PlayBar: UIView {
     }
     
     @IBAction func favoriteBtnAction(_ sender: Any) {
-        let vc = UIStoryboard(name: "NewFavoritePopup", bundle: nil).instantiateViewController(withIdentifier: "NewFavoritePopup") as! NewFavoritePopup_UI
+        let vc = UIStoryboard(name: "PremiumPopup", bundle: nil).instantiateViewController(withIdentifier: "PremiumPopup_UI") as! PremiumPopup_UI
         vc.modalPresentationStyle = .overCurrentContext
         let currentController = self.getCurrentViewController()
         currentController?.present(vc, animated: true, completion: nil)

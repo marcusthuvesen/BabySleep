@@ -102,7 +102,6 @@ class SleepTimerPopupPresenter{
             SleepTimerPopupPresenter.sleepTimer.stopTimer()
             sleepTimerDelegate?.hideTimeLabel()
         }
-        
     }
     
     func runUpdateTimeEverySecond(hour: Int, minute: Int, second: Int){
@@ -173,6 +172,4 @@ class SleepTimerPopupPresenter{
         }
         return (hour, minute)
     }
-
-    
 }

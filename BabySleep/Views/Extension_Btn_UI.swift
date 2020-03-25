@@ -93,6 +93,14 @@ extension UIView {
         self.backgroundColor = CustomColors.transparentPink
     }
     
+    func premiumPopupContainerUI(){
+        self.layer.cornerRadius = 10
+        self.layer.masksToBounds = true
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.white.cgColor
+        self.backgroundColor = .white
+    }
+    
     func sleepTimerShortcutBtnUI(){
         self.layer.cornerRadius = self.frame.height/2
         self.layer.masksToBounds = true

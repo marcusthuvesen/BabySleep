@@ -63,8 +63,7 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     }
     
     func setupPremiumPopupUI(){
-        premiumContainerView.normalButtonUI()
-        
+        premiumContainerView.premiumPopupContinueUI()
         continueBtnOutlet.premiumPopupContinueUI()
       //  backgroundPopupImage.addBlurEffect()
         premiumAvatarImage.goldBackground()
