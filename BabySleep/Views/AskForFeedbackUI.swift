@@ -34,7 +34,7 @@ class AskForFeedbackUI: UIViewController, AskForFeedbackDelegate{
         hiddenFeedbackOutlet.premiumPopupContinueUI()
         leaveFeedbackOutlet.premiumPopupContinueUI()
         sendToRateOutlet.premiumPopupContinueUI()
-        askForFeedbackContainer.normalButtonUI()
+        askForFeedbackContainer.premiumPopupContainerUI()
         avatarImage.goldBackground()
         feedbackTextView.normalButtonUI()
     }

@@ -98,7 +98,7 @@ extension UIView {
         self.layer.masksToBounds = true
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.white.cgColor
-        self.backgroundColor = .white
+        //self.backgroundColor = .black
     }
     
     func sleepTimerShortcutBtnUI(){
