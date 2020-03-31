@@ -10,9 +10,9 @@ import UIKit
 
 class PopupCollectionView_UI : PremiumPopup_UI, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
-    var sliderImageArray = [UIImage(named: "stop"), UIImage(named: "ecg-lines2"), UIImage(named: "star2"), UIImage(named: "openLock2")]
-    var sliderLabelArray = ["No Ads", "Unlimited Cure", "Save Favorites", "Unlock Sounds"]
-    var sliderSubLabelArray = ["Remove all ads", "Use Tinnitus Matcher unlimited", "Favorite your mixed sounds for later use", "Access all sounds from the library"]
+    var sliderImageArray = [UIImage(named: "stop"), UIImage(named: "openLock2")]
+    var sliderLabelArray = ["No Ads", "Unlock Sounds"]
+    var sliderSubLabelArray = ["Remove all ads", "Access all sounds from the library"]
     
     var sliderTimer = Timer()
     var counter = 0

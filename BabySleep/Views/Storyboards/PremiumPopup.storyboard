@@ -25,7 +25,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSx-ml-85N">
                                 <rect key="frame" x="20" y="94" width="374" height="748"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background12" translatesAutoresizingMaskIntoConstraints="NO" id="0O7-PS-wkS">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background12" translatesAutoresizingMaskIntoConstraints="NO" id="0O7-PS-wkS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="748"/>
                                         <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </imageView>
