@@ -16,8 +16,10 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     @IBOutlet weak var bgGradientView: UIView!
     //Button Outlets
     @IBOutlet var soundBtnOutlets: [UIButton]!
+    
     //BackgroundImages Outlets
     @IBOutlet var btnBackgroundImages: [UIImageView]!
+    
     //Menu Outlets
     @IBOutlet weak var menuBtnOne: UIButton!
     @IBOutlet weak var menuBtnTwo: UIButton!
@@ -111,6 +113,7 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     }
     
     func soundBtnSelected(senderOutlet : UIImageView, soundName : String) {
+        print("soundName \(soundName)")
         senderOutlet.normalButtonIsClickedUI()
         showSliderContainer()
         SoundVC_UI.soundsCurrentlyPlaying.playSound(fileName: soundName)
@@ -199,6 +202,7 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     }
     
     @IBAction func firstSoundBtn(_ sender: UIButton) {
+        print("soundName btn clicked is \(sender)")
         soundPresenter.soundButtonClicked(senderOutlet: btnBackgroundImages[sender.tag-1], sender: sender)
     }
 

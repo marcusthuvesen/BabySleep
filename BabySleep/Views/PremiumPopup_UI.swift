@@ -21,10 +21,9 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
  
     @IBOutlet weak var backgroundPopupImage: UIImageView!
     @IBOutlet weak var premiumContainerView: UIView!
-    @IBOutlet weak var firstSubBtnOutlet: UIButton!
+    
     @IBOutlet weak var secondSubBtnOutlet: UIButton!
-    @IBOutlet weak var premiumAvatarImage: UIImageView!
-    @IBOutlet weak var mostValueView: UIView!
+   
     
     @IBOutlet weak var popupCollectionView: UICollectionView!
     @IBOutlet weak var popupCVPageController: UIPageControl!
@@ -50,11 +49,11 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     }
     
     func setupPremiumPopupUI(){
-        premiumContainerView.premiumPopupContainerUI()
+        //premiumContainerView.premiumPopupContainerUI()
       //backgroundPopupImage.addBlurEffect()
-        premiumAvatarImage.goldBackground()
+        
        // firstSubBtnOutlet.normalButtonUI()
-        secondSubBtnOutlet.normalButtonUI()
+        secondSubBtnOutlet.premiumPopupContinueUI()
     }
     
     @IBAction func dismissPopupBtn(_ sender: Any) {

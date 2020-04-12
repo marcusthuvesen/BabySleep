@@ -50,6 +50,12 @@ struct AudioFiles {
             soundName = "coffee"
         case 18:
             soundName = "city"
+        case 19:
+            soundName = "babyLullaby_1"
+        case 20:
+            soundName = "babyLullaby_2"
+        case 21:
+            soundName = "babyLullaby_3"
         default:
            soundName = "rain"
         }
