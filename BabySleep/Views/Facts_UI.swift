@@ -38,6 +38,14 @@ class Facts_UI: UIViewController, FactsDelegate {
         self.navigationController?.view.backgroundColor = UIColor.clear
         let bounds = self.navigationController!.navigationBar.bounds
         self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height + 20)
+        firstFactBtnOutlet.layer.borderWidth = 1
+        firstFactBtnOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        secondFactBtnOutlet.layer.borderWidth = 1
+        secondFactBtnOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        thirdFactBtnOutlet.layer.borderWidth = 1
+        thirdFactBtnOutlet.layer.borderColor = UIColor.darkGray.cgColor
+        fourthFactBtnOutlet.layer.borderWidth = 1
+        fourthFactBtnOutlet.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     func setupFactsDelegate(){
