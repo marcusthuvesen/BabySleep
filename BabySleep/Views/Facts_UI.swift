@@ -13,7 +13,9 @@ class Facts_UI: UIViewController, FactsDelegate {
     @IBOutlet weak var firstFactBtnOutlet: UIButton!
     @IBOutlet weak var secondFactBtnOutlet: UIButton!
     @IBOutlet weak var thirdFactBtnOutlet: UIButton!
-    @IBOutlet weak var fourthFactBtnOutlet: UIButton!
+    @IBOutlet weak var firstFactView: UIView!
+    @IBOutlet weak var secondFactView: UIView!
+    @IBOutlet weak var thirdFactView: UIView!
     @IBOutlet weak var playBarContainerView: PlayBar!
     
     let factsPresenter = FactsPresenter()
@@ -38,14 +40,15 @@ class Facts_UI: UIViewController, FactsDelegate {
         self.navigationController?.view.backgroundColor = UIColor.clear
         let bounds = self.navigationController!.navigationBar.bounds
         self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height + 20)
-        firstFactBtnOutlet.layer.borderWidth = 1
-        firstFactBtnOutlet.layer.borderColor = UIColor.white.cgColor
-        secondFactBtnOutlet.layer.borderWidth = 1
-        secondFactBtnOutlet.layer.borderColor = UIColor.white.cgColor
-        thirdFactBtnOutlet.layer.borderWidth = 1
-        thirdFactBtnOutlet.layer.borderColor = UIColor.white.cgColor
-        fourthFactBtnOutlet.layer.borderWidth = 1
-        fourthFactBtnOutlet.layer.borderColor = UIColor.white.cgColor
+        
+        firstFactBtnOutlet.layer.cornerRadius = 50
+        firstFactBtnOutlet.layer.maskedCorners = .layerMinXMaxYCorner
+        secondFactBtnOutlet.layer.cornerRadius = 50
+        secondFactBtnOutlet.layer.maskedCorners = .layerMinXMaxYCorner
+        firstFactView.layer.cornerRadius = 50
+        firstFactView.layer.maskedCorners = .layerMinXMinYCorner
+        thirdFactView.layer.cornerRadius = 50
+        thirdFactView.layer.maskedCorners = .layerMinXMaxYCorner
     }
     
     func setupFactsDelegate(){
@@ -67,10 +70,6 @@ class Facts_UI: UIViewController, FactsDelegate {
     }
     @IBAction func thirdFactBtn(_ sender: Any) {
         factsPresenter.factButtonSelected(buttonPressed: "Third")
-        
-    }
-    @IBAction func fourthFactBtn(_ sender: Any) {
-        factsPresenter.factButtonSelected(buttonPressed: "Fourth")
     }
     
     func pushToVC(specificTitleText : String, specificTextViewText : String){

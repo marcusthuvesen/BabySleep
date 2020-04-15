@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="-27" width="414" height="2027"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="4kl-SE-Vlh">
-                                                <rect key="frame" x="5" y="50" width="404" height="180"/>
+                                                <rect key="frame" x="5" y="50" width="404.00000000000023" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="5ku-yW-7D4"/>
                                                 </constraints>
@@ -533,7 +533,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babys" translatesAutoresizingMaskIntoConstraints="NO" id="dNU-Dd-Xsn">
-                                                <rect key="frame" x="107" y="30" width="200" height="106"/>
+                                                <rect key="frame" x="107" y="30" width="200" height="106.00000000000003"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="FQm-p0-ftT"/>
                                                     <constraint firstAttribute="height" constant="106" id="R9C-lK-wSt"/>
@@ -1246,15 +1246,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="factBg_8" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-M7-vsV">
-                                <rect key="frame" x="0.0" y="-90" width="414" height="858"/>
+                                <rect key="frame" x="0.0" y="-90" width="414" height="323"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-uJ-Db1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="719"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tvo-r3-ztT">
+                                <rect key="frame" x="0.0" y="233" width="414" height="486"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7Q-CC-y9p">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                                        <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgW-bi-Ap3">
+                                        <rect key="frame" x="0.0" y="162" width="414" height="162"/>
+                                        <color key="backgroundColor" red="0.019607843140000001" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chp-AK-0Hi">
+                                        <rect key="frame" x="0.0" y="324" width="414" height="162"/>
+                                        <color key="backgroundColor" red="0.019607843140000001" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-uJ-Db1">
+                                <rect key="frame" x="0.0" y="233" width="414" height="486"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgn-Bf-Wfq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                                        <color key="backgroundColor" red="0.62745098039215685" green="0.4851906278050595" blue="0.62500456297773321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Make your baby tired"/>
                                         <connections>
@@ -1262,30 +1279,22 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-Oc-mac">
-                                        <rect key="frame" x="0.0" y="180" width="414" height="179"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="162" width="414" height="162"/>
+                                        <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="tintColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Ways to put baby to sleep"/>
                                         <connections>
                                             <action selector="secondFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="dB3-kR-zeY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4i-Dj-pJY">
-                                        <rect key="frame" x="0.0" y="360" width="414" height="179"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <state key="normal" title="Helping baby sleeping through the night"/>
-                                        <connections>
-                                            <action selector="thirdFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="H6R-Rd-ltJ"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-G2-BpK">
-                                        <rect key="frame" x="0.0" y="540" width="414" height="179"/>
+                                        <rect key="frame" x="0.0" y="324" width="414" height="162"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Make baby sleep longer"/>
                                         <connections>
-                                            <action selector="fourthFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="qYS-Ij-Nnv"/>
+                                            <action selector="thirdFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="qYS-Ij-Nnv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1297,21 +1306,33 @@
                                     <constraint firstAttribute="height" constant="55" id="S7D-vg-Cgk"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read &amp; Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izs-uk-lks">
+                                <rect key="frame" x="105" y="20" width="204.5" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.015686274510000001" green="0.039215686270000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.95294117649999999" green="0.32549019610000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="O4h-M7-vsV" secondAttribute="bottom" constant="40" id="EFA-Mi-rmw"/>
+                            <constraint firstItem="O4h-M7-vsV" firstAttribute="height" secondItem="CPP-uu-UJ9" secondAttribute="height" multiplier="0.4" id="0DN-xk-ziS"/>
+                            <constraint firstItem="tvo-r3-ztT" firstAttribute="top" secondItem="O4h-M7-vsV" secondAttribute="bottom" id="GDp-Po-ajh"/>
                             <constraint firstItem="DCM-cs-xSH" firstAttribute="trailing" secondItem="Afc-uJ-Db1" secondAttribute="trailing" id="Ha0-7U-Bsd"/>
                             <constraint firstItem="O4h-M7-vsV" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="Ntl-iD-Mik"/>
                             <constraint firstItem="jYx-mN-CWu" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="Omp-9p-RbL"/>
+                            <constraint firstItem="Afc-uJ-Db1" firstAttribute="top" secondItem="O4h-M7-vsV" secondAttribute="bottom" id="Ote-gg-RJv"/>
                             <constraint firstItem="jYx-mN-CWu" firstAttribute="trailing" secondItem="DCM-cs-xSH" secondAttribute="trailing" id="Y5F-Wa-ASq"/>
+                            <constraint firstItem="izs-uk-lks" firstAttribute="top" secondItem="CPP-uu-UJ9" secondAttribute="topMargin" constant="20" id="Yb3-hQ-3uP"/>
+                            <constraint firstItem="jYx-mN-CWu" firstAttribute="top" secondItem="tvo-r3-ztT" secondAttribute="bottom" id="bZD-qK-J86"/>
                             <constraint firstItem="O4h-M7-vsV" firstAttribute="top" secondItem="CPP-uu-UJ9" secondAttribute="top" constant="-90" id="dmK-b6-gKU"/>
+                            <constraint firstItem="DCM-cs-xSH" firstAttribute="trailing" secondItem="tvo-r3-ztT" secondAttribute="trailing" id="hPI-Tw-Hpg"/>
                             <constraint firstItem="DCM-cs-xSH" firstAttribute="bottom" secondItem="jYx-mN-CWu" secondAttribute="bottom" id="meL-Wb-KQN"/>
                             <constraint firstItem="Afc-uJ-Db1" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="oWg-ov-qgy"/>
+                            <constraint firstItem="izs-uk-lks" firstAttribute="centerX" secondItem="CPP-uu-UJ9" secondAttribute="centerX" id="pCm-2I-gCE"/>
                             <constraint firstItem="jYx-mN-CWu" firstAttribute="top" secondItem="Afc-uJ-Db1" secondAttribute="bottom" id="qPn-cb-His"/>
                             <constraint firstItem="DCM-cs-xSH" firstAttribute="trailing" secondItem="O4h-M7-vsV" secondAttribute="trailing" id="sRI-AJ-NV0"/>
-                            <constraint firstItem="Afc-uJ-Db1" firstAttribute="top" secondItem="DCM-cs-xSH" secondAttribute="top" id="xTt-R7-RTP"/>
+                            <constraint firstItem="tvo-r3-ztT" firstAttribute="leading" secondItem="DCM-cs-xSH" secondAttribute="leading" id="zsi-ys-63B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DCM-cs-xSH"/>
                     </view>
@@ -1320,10 +1341,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="firstFactBtnOutlet" destination="xgn-Bf-Wfq" id="F1U-9Z-3Zn"/>
-                        <outlet property="fourthFactBtnOutlet" destination="JTw-G2-BpK" id="YD1-Gn-6BE"/>
+                        <outlet property="firstFactView" destination="u7Q-CC-y9p" id="qaI-KG-Nnf"/>
                         <outlet property="playBarContainerView" destination="jYx-mN-CWu" id="2Aq-9K-U20"/>
                         <outlet property="secondFactBtnOutlet" destination="CYc-Oc-mac" id="hx5-nJ-3jC"/>
-                        <outlet property="thirdFactBtnOutlet" destination="B4i-Dj-pJY" id="rfw-IG-mqb"/>
+                        <outlet property="secondFactView" destination="BgW-bi-Ap3" id="vo2-jb-pGT"/>
+                        <outlet property="thirdFactBtnOutlet" destination="JTw-G2-BpK" id="YD1-Gn-6BE"/>
+                        <outlet property="thirdFactView" destination="chp-AK-0Hi" id="H0a-ep-oJQ"/>
                         <segue destination="Fkx-Ty-2fH" kind="show" identifier="SpecificFact_UI_Segue" id="aUW-QW-3uh"/>
                     </connections>
                 </viewController>
