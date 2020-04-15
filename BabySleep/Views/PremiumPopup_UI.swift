@@ -63,7 +63,21 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     @IBAction func secondSubBtnClicked(_ sender: UIButton) {
         premiumPopupPresenter.whatButtonClicked(buttonName: "second")
     }
-
+    
+    @IBAction func termsOfUseBtn(_ sender: UIButton) {
+       openUrl(urlStr: "https://baby-sleep-0.flycricket.io/terms.html") 
+    }
+    
+    
+    @IBAction func privacyPolicyBtn(_ sender: UIButton) {
+        openUrl(urlStr: "https://baby-sleep-0.flycricket.io/privacy.html")
+    }
+    
+    func openUrl(urlStr: String!) {
+        if let url = URL(string:urlStr), !url.absoluteString.isEmpty {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     func changePremiumTintColors(firstLabel : UILabel, secondLabel : UILabel, thirdLabel : UILabel, isClicked : Bool){
         var newTintColor : UIColor
         newTintColor = isClicked == true ? UIView.CustomColors.gold : .black

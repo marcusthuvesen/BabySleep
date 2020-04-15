@@ -54,11 +54,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="89" height="30"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Terms of use"/>
+                                                        <connections>
+                                                            <action selector="termsOfUseBtn:" destination="59c-xY-qYI" eventType="touchUpInside" id="aQd-bm-1Bh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuu-Ae-vOh">
                                                         <rect key="frame" x="164" y="0.0" width="95" height="30"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Privacy policy"/>
+                                                        <connections>
+                                                            <action selector="privacyPolicyBtn:" destination="59c-xY-qYI" eventType="touchUpInside" id="Alt-3t-JKx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
