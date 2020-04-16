@@ -153,7 +153,7 @@ class SleepTimerPopupPresenter{
     }
     
     func unselectLatestOutlet(sender : UIButton){
-        if latestOutlet != nil{
+        if latestOutlet != nil && sender != latestOutlet {
             self.sleepTimerDelegate?.shortcutBtnUnselectedUI(sender : latestOutlet!)
         }
         latestOutlet = sender
