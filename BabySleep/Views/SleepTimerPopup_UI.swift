@@ -11,8 +11,7 @@ import UIKit
 
 
 class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
-   
-
+  
     @IBOutlet var shortcutOutlets: [UIButton]!
     @IBOutlet weak var timerDoneOutlet: UIButton!
     @IBOutlet weak var timePickerOutlet: UIDatePicker!
@@ -29,6 +28,13 @@ class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
         setupSleepTimerUI()
         setupSleepTimerDelegate()
         hideKeyboardWhenTappedAround()
+        setPickerToCountDown()
+    }
+    
+    func setPickerToCountDown(){
+        DispatchQueue.main.async(execute: {
+            self.timePickerOutlet.countDownDuration = 0
+        })
     }
     
     func setupSleepTimerDelegate(){
@@ -40,8 +46,8 @@ class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
         for outlet in shortcutOutlets{ outlet.sleepTimerShortcutBtnUI() }
         timerDoneOutlet.premiumPopupContinueUI()
         timePickerOutlet.setValue(UIColor.white, forKeyPath: "textColor")
-        sleepTimerContainerView.layer.cornerRadius = 20
-        stopWatchBackgroundView.layer.cornerRadius = stopWatchBackgroundView.frame.height/2
+        sleepTimerContainerView.normalButtonUI()
+        stopWatchBackgroundView.layer.cornerRadius = stopWatchBackgroundView.frame.height / 2
         stopWatchImage.tintColor = UIView.CustomColors.transparentPink
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat =  "HH:mm"
@@ -49,8 +55,6 @@ class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
             timePickerOutlet.date = date
         }
     }
-    
-   
     
     func showTimeLabel() {
         sleepTimeLabel.isHidden = false
@@ -63,15 +67,12 @@ class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
     func doneBtnText(btnText: String) {
         timerDoneOutlet.setTitle(btnText, for: .normal)
     }
-    
-    
-    
     func updateTimerLabelUI(sleepLabelText: String) {
         sleepTimeLabel.text = sleepLabelText
     }
     
     func updateTimeEverySecond(sleepText : String) {
-       sleepTimeLabel.text = sleepText
+        sleepTimeLabel.text = sleepText
     }
     
     @IBAction func dismissTimerPopup(_ sender: UIButton) {
@@ -83,7 +84,7 @@ class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
     }
     
     func dismissSleepTimerPopup(){
-          self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func sleepTimeChanged(_ sender: UIDatePicker) {
@@ -103,5 +104,5 @@ class SleepTimerPopup_UI: UIViewController, SleepTimerPopupDelegate{
         sleepTimerPopupDelegate.shortcutBtnSelected(sender: sender, sleepTimeLabel : sleepTimeLabel)
     }
     
-
+    
 }

@@ -67,19 +67,23 @@ class SleepTimerPopupPresenter{
         if sender.isSelected{
             self.sleepTimerDelegate?.shortcutBtnSelectedUI(sender : sender)
             unselectLatestOutlet(sender: sender)
+            SleepTimerPopupPresenter.sleepTimer.stopTimer()
+            SleepTimerPopupPresenter.doneBtnIsSelected = false
+            sleepTimerDelegate?.doneBtnText(btnText: "Set Timer")
             sleepTimerDelegate?.showTimeLabel()
+           
             switch sender.tag {
             case 0:
-                sleepTimeLabel.text = "00:00:15"
+                sleepTimeLabel.text = "00:15:00"
                 setTime = (0,15)
             case 1:
-                sleepTimeLabel.text = "00:00:30"
+                sleepTimeLabel.text = "00:30:00"
                 setTime = (0,30)
             case 2:
-                sleepTimeLabel.text = "00:00:45"
+                sleepTimeLabel.text = "00:45:00"
                 setTime = (0,45)
             case 3:
-                sleepTimeLabel.text = "00:00:60"
+                sleepTimeLabel.text = "00:60:00"
                 setTime = (0,60)
             default:
                 sleepTimeLabel.text = "00:00:00"
@@ -98,9 +102,22 @@ class SleepTimerPopupPresenter{
             SleepTimerPopupPresenter.sleepTimer.startTimer(hour: hour, minutes: minute)
             sleepTimerDelegate?.dismissSleepTimerPopup()
         } else {
-            sender.setTitle("Done", for: .normal)
+            sender.setTitle("Set Timer", for: .normal)
             SleepTimerPopupPresenter.sleepTimer.stopTimer()
             sleepTimerDelegate?.hideTimeLabel()
+        }
+        
+    }
+    func timePickerChanged(datePicker : UIDatePicker, sleepTimeLabel : UILabel){
+        SleepTimerPopupPresenter.sleepTimer.stopTimer()
+        SleepTimerPopupPresenter.doneBtnIsSelected = false
+        sleepTimerDelegate?.doneBtnText(btnText: "Set Timer")
+        sleepTimerDelegate?.showTimeLabel()
+        let date = datePicker.date
+        _ = Calendar.current.dateComponents([.hour, .minute, .second], from: date)
+        setTime = changeCountDownTimer(datePicker: datePicker, sleepTimeLabel: sleepTimeLabel)
+        if latestOutlet != nil {
+            unselectLatestOutlet(sender: latestOutlet!)
         }
     }
     
@@ -140,20 +157,13 @@ class SleepTimerPopupPresenter{
         latestOutlet = sender
     }
     
-    func timePickerChanged(datePicker : UIDatePicker, sleepTimeLabel : UILabel){
-        sleepTimerDelegate?.showTimeLabel()
-        setTime = changeCountDownTimer(datePicker: datePicker, sleepTimeLabel: sleepTimeLabel)
-        if latestOutlet != nil {
-            unselectLatestOutlet(sender: latestOutlet!)
-        }
-    }
+    
     
     func changeCountDownTimer(datePicker : UIDatePicker, sleepTimeLabel : UILabel) -> (Int, Int) {
         let date = datePicker.date
         let components = Calendar.current.dateComponents([.hour, .minute, .second], from: date)
         let hour = components.hour!
         let minute = components.minute!
-
         var stringMinute = ""
         if minute < 10 {
             stringMinute = String(minute)
@@ -172,4 +182,6 @@ class SleepTimerPopupPresenter{
         }
         return (hour, minute)
     }
+    
+    
 }

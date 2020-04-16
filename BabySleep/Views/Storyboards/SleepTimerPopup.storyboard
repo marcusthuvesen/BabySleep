@@ -112,7 +112,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Vg-b7-dM0">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Vg-b7-dM0">
                                         <rect key="frame" x="0.0" y="180" width="334" height="268"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,7 +164,7 @@
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="njP-ek-ehM">
                                 <rect key="frame" x="177" y="154" width="60" height="35"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.62745098040000002" green="0.36470588240000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Php-S4-vmG"/>
@@ -177,6 +177,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="M44-jh-OWP" firstAttribute="top" secondItem="Fcw-QB-t0A" secondAttribute="bottom" constant="-50" id="0d5-A9-bf8"/>
                             <constraint firstItem="5eu-xc-Tm4" firstAttribute="centerX" secondItem="m9z-Xw-H5Y" secondAttribute="centerX" id="SPq-tv-mdh"/>
                             <constraint firstItem="j2Y-cR-8LJ" firstAttribute="trailing" secondItem="M44-jh-OWP" secondAttribute="trailing" constant="40" id="XUM-p8-yaj"/>
                             <constraint firstItem="M44-jh-OWP" firstAttribute="centerY" secondItem="m9z-Xw-H5Y" secondAttribute="centerY" id="Z9p-zz-hbo"/>
@@ -186,7 +187,6 @@
                             <constraint firstItem="M44-jh-OWP" firstAttribute="top" secondItem="5eu-xc-Tm4" secondAttribute="bottom" constant="-50" id="iku-Fh-x1z"/>
                             <constraint firstItem="njP-ek-ehM" firstAttribute="centerX" secondItem="m9z-Xw-H5Y" secondAttribute="centerX" id="kGC-Co-N4X"/>
                             <constraint firstItem="njP-ek-ehM" firstAttribute="top" secondItem="5eu-xc-Tm4" secondAttribute="bottom" constant="-70" id="ojT-si-xEU"/>
-                            <constraint firstItem="Fcw-QB-t0A" firstAttribute="top" secondItem="j2Y-cR-8LJ" secondAttribute="top" constant="80" id="rDM-QN-svh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j2Y-cR-8LJ"/>
                     </view>
