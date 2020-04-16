@@ -703,7 +703,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.019607843140000001" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.17254901960784313" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="ETl-Pf-ZrA"/>
                                     <constraint firstAttribute="height" constant="25" id="GMY-TA-3FF"/>
@@ -747,7 +747,7 @@
                                         </connections>
                                     </slider>
                                 </subviews>
-                                <color key="backgroundColor" red="0.36470588235294116" green="0.20784313725490194" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.17254901960784313" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="jsF-Iz-VtV" firstAttribute="centerY" secondItem="Adp-Ir-B3F" secondAttribute="centerY" id="Dcr-Js-uME"/>
                                     <constraint firstItem="Rnc-ob-leO" firstAttribute="centerY" secondItem="Adp-Ir-B3F" secondAttribute="centerY" id="OeR-gq-Xg6"/>
