@@ -48,7 +48,7 @@ class SleepTimer{
         }
         counter = 0
     }
-
+    
     @objc func updateCounter() {
         //example functionality
         if counter > 0 {
@@ -58,17 +58,17 @@ class SleepTimer{
         } else {
             print("\(counter) seconds until pause")
             SoundVC_UI.soundsCurrentlyPlaying.stopAll()
-            //FrequencyVC_UI.toneOutPutUnit.stop()
             stopTimer()
         }
         let (hour, minute, second) = secondsToHoursMinutesSeconds(seconds: counter)
-//        self.sleepTimerDelegate?.updateTimeEverySecond(hour: hour, minute: minute, second: second)
-//        test()
-
+        //        self.sleepTimerDelegate?.updateTimeEverySecond(hour: hour, minute: minute, second: second)
+        //        test()
+        
         let timeDict = ["hour": hour, "minute" : minute, "second" : second]
-
+        
         NotificationCenter.default.post(name: Notification.Name("TimeUpdate"), object: timeDict)
         sleepTimerPopupPresenter?.runUpdateTimeEverySecond(hour: hour, minute: minute, second: second)
+        
     }
-   
+    
 }

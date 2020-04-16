@@ -1,6 +1,5 @@
 //
 //  SoundsCurrentlyPlaying.swift
-//  Tinnitus
 //
 //  Created by Marcus Thuvesen on 2019-09-09.
 //  Copyright © 2019 Marcus Thuvesen. All rights reserved.
@@ -20,20 +19,20 @@ class SoundsCurrentlyPlaying{
         var soundAlreadyExists = false
         for sound in SoundsCurrentlyPlaying.soundsArray{
             if soundName == sound{
-               soundAlreadyExists = true
+                soundAlreadyExists = true
             }
         }
         if !soundAlreadyExists{
-             SoundsCurrentlyPlaying.soundsArray.append(soundName)
+            SoundsCurrentlyPlaying.soundsArray.append(soundName)
             
         }
         
     }
     
-    func playSound(fileName : String) {
-        
-        guard let url = Bundle.main.url(forResource: fileName, withExtension: "wav") else { return }
-        
+    func playSound(fileName : String, currentVolume : Float) {
+        print("tone: CurrentVolume \(fileName)")
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "mp3") else { print("print in return")
+            return }
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
@@ -42,7 +41,7 @@ class SoundsCurrentlyPlaying{
             audioPlayers.append((audioPlayer, fileName))
             let newAudioPlayer = audioPlayers[audioPlayers.count-1]
             newAudioPlayer.audioPlayer.numberOfLoops = -1
-            newAudioPlayer.audioPlayer.volume = 1
+            newAudioPlayer.audioPlayer.volume = currentVolume
             newAudioPlayer.audioPlayer.play()
             
         } catch let error {
@@ -53,11 +52,11 @@ class SoundsCurrentlyPlaying{
     func removeSound(fileName : String){
         var counter = 0
         for sound in SoundsCurrentlyPlaying.soundsArray{
-           
+            
             if sound == fileName{
                 SoundsCurrentlyPlaying.soundsArray.remove(at: counter)
             }
-             counter += 1
+            counter += 1
         }
     }
     
@@ -72,7 +71,6 @@ class SoundsCurrentlyPlaying{
             counter += 1
         }
     }
-    
     func changeVolumeOnSound(soundName : String? = nil, newValue : Float){
         if soundName != nil{
             for player in audioPlayers{
@@ -84,6 +82,7 @@ class SoundsCurrentlyPlaying{
     }
     
     func stopAll(){
+        print("print stop all")
         for player in audioPlayers{
             player.audioPlayer.stop()
         }

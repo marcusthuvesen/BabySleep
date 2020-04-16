@@ -90,6 +90,8 @@ class SleepTimerPopupPresenter{
             }
         } else {
             self.sleepTimerDelegate?.shortcutBtnUnselectedUI(sender : sender)
+            SleepTimerPopupPresenter.sleepTimer.stopTimer()
+            sleepTimerDelegate?.hideTimeLabel()
         }
     }
     

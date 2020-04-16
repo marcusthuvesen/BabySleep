@@ -35,6 +35,9 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     @IBOutlet weak var mechanicLabel: UILabel!
     @IBOutlet weak var natureLabel: UILabel!
     
+    @IBOutlet weak var countDownView: UIView!
+    @IBOutlet weak var countDownLabel: UILabel!
+    
     @IBOutlet weak var playBarContainerView: PlayBar!
     var defaultThumbImage : UIImage?
     
@@ -79,24 +82,37 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     
     func hideSliderContainer() {
         if !SoundVC_UI.soundsCurrentlyPlaying.areSoundsPlaying(){
-            let top = CGAffineTransform(translationX: 0, y: +60)
-            UIView.animate(withDuration: 0.4, delay: 0.0, options: [], animations: {
+            let top = CGAffineTransform(translationX: 0, y: +55)
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
                 self.soundVolumeView.transform = top
+                self.countDownView.transform = top
             }, completion: {_ in
                 self.soundVolumeView.isHidden = true
+                self.hideCountDownTimeView()
             })
-            
         }
+    }
+    
+    func showCountDownTimeView() {
+        countDownView.isHidden = false
+    }
+    
+    func hideCountDownTimeView() {
+        countDownView.isHidden = true
+    }
+    
+    func changeCountDownTime(timeString: String) {
+        countDownLabel.text = timeString
     }
     
     func showSliderContainer(){
         if soundVolumeView.isHidden{
             soundVolumeView.isHidden = false
-            let top = CGAffineTransform(translationX: 0, y: -60)
-            UIView.animate(withDuration: 0.4, delay: 0.0, options: [], animations: {
-                self.soundVolumeView.transform = top
+            let soundVolumeViewtop = CGAffineTransform(translationX: 0, y: -55)
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
+                self.soundVolumeView.transform = soundVolumeViewtop
+                self.countDownView.transform = soundVolumeViewtop
             }, completion: nil)
-            
         }
     }
     
@@ -109,13 +125,34 @@ class SoundVC_UI: UIViewController, SoundDelegate{
         menuBtnOne.menuBtnUI()
         menuBtnTwo.menuBtnUI()
         menuBtnThree.menuBtnUI()
+        countDownView.layer.cornerRadius = 15
+        countDownView.layer.maskedCorners = [.layerMaxXMinYCorner]
     }
+    
+    
     
     func soundBtnSelected(senderOutlet : UIImageView, soundName : String) {
         print("soundName \(soundName)")
         senderOutlet.normalButtonIsClickedUI()
+        let currentVolume = checkCurrentSliderVolume()
         showSliderContainer()
-        SoundVC_UI.soundsCurrentlyPlaying.playSound(fileName: soundName)
+        SoundVC_UI.soundsCurrentlyPlaying.playSound(fileName: soundName, currentVolume: currentVolume)
+    }
+    
+    func checkCurrentSliderVolume() -> Float{
+        let sliderNumberForNewSound = checkNumberOfEmptySliders()
+        var currentVolume : Float = 0.0
+        switch sliderNumberForNewSound {
+        case 1:
+            currentVolume = firstSliderOutlet.value
+        case 2:
+            currentVolume = secondSliderOutlet.value
+        case 3:
+            currentVolume = thirdSliderOutlet.value
+        default:
+            currentVolume = 0.25
+        }
+        return currentVolume
     }
     
     func soundBtnUnselected(senderOutlet : UIImageView, soundName : String) {
@@ -287,4 +324,5 @@ extension UIImage {
         return image
     }
 }
+
 

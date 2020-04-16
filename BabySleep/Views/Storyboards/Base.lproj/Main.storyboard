@@ -693,6 +693,26 @@
                                     <constraint firstAttribute="bottom" secondItem="2uX-O9-2Wf" secondAttribute="bottom" constant="362" id="kPl-SX-w7c"/>
                                 </constraints>
                             </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rco-f3-pzR">
+                                <rect key="frame" x="0.0" y="2337" width="75" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsm-Ox-kM8">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="25"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" red="0.95294117649999999" green="0.32549019610000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.054901960780000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="ETl-Pf-ZrA"/>
+                                    <constraint firstAttribute="height" constant="25" id="GMY-TA-3FF"/>
+                                    <constraint firstAttribute="bottom" secondItem="gsm-Ox-kM8" secondAttribute="bottom" id="L7W-wa-thr"/>
+                                    <constraint firstItem="gsm-Ox-kM8" firstAttribute="leading" secondItem="rco-f3-pzR" secondAttribute="leading" id="b5Q-vp-NPN"/>
+                                    <constraint firstAttribute="trailing" secondItem="gsm-Ox-kM8" secondAttribute="trailing" id="f7m-Fn-rIH"/>
+                                    <constraint firstItem="gsm-Ox-kM8" firstAttribute="top" secondItem="rco-f3-pzR" secondAttribute="top" id="tjn-iA-cDa"/>
+                                </constraints>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adp-Ir-B3F">
                                 <rect key="frame" x="0.0" y="2362" width="414" height="60"/>
                                 <subviews>
@@ -751,12 +771,14 @@
                         <constraints>
                             <constraint firstItem="PBa-0w-8Mo" firstAttribute="trailing" secondItem="RJ2-Ze-KUn" secondAttribute="trailing" id="1p6-Gh-cfT"/>
                             <constraint firstItem="Adp-Ir-B3F" firstAttribute="top" secondItem="fAL-og-PH9" secondAttribute="bottom" constant="8" symbolic="YES" id="7Q2-Mo-eEn"/>
+                            <constraint firstAttribute="bottom" secondItem="rco-f3-pzR" secondAttribute="bottom" constant="55" id="9V7-8z-vB2"/>
                             <constraint firstItem="Adp-Ir-B3F" firstAttribute="leading" secondItem="PBa-0w-8Mo" secondAttribute="leading" id="J6d-1u-3Sl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="RJ2-Ze-KUn" secondAttribute="bottom" id="M9m-vx-4ub"/>
                             <constraint firstItem="PBa-0w-8Mo" firstAttribute="trailing" secondItem="Adp-Ir-B3F" secondAttribute="trailing" id="MEq-ST-PvM"/>
                             <constraint firstItem="fAL-og-PH9" firstAttribute="leading" secondItem="PBa-0w-8Mo" secondAttribute="leading" id="Qlb-AI-nTA"/>
                             <constraint firstItem="pfR-V4-hrg" firstAttribute="top" secondItem="PBa-0w-8Mo" secondAttribute="top" id="TpQ-GT-uud"/>
                             <constraint firstItem="pfR-V4-hrg" firstAttribute="trailing" secondItem="PBa-0w-8Mo" secondAttribute="trailing" id="Vav-Ee-qB9"/>
+                            <constraint firstItem="rco-f3-pzR" firstAttribute="leading" secondItem="PBa-0w-8Mo" secondAttribute="leading" id="Y1w-pV-HUH"/>
                             <constraint firstItem="Rnc-ob-leO" firstAttribute="width" secondItem="wVt-2H-FgH" secondAttribute="width" multiplier="1/4" id="ZZo-gR-2uC"/>
                             <constraint firstItem="fAL-og-PH9" firstAttribute="top" secondItem="wVt-2H-FgH" secondAttribute="top" constant="-8" id="baZ-a6-79z"/>
                             <constraint firstItem="x2w-6S-FEz" firstAttribute="width" secondItem="wVt-2H-FgH" secondAttribute="width" multiplier="1/4" id="d9J-It-elv"/>
@@ -776,6 +798,8 @@
                     <size key="freeformSize" width="414" height="2500"/>
                     <connections>
                         <outlet property="bgGradientView" destination="fAL-og-PH9" id="LXy-n6-42B"/>
+                        <outlet property="countDownLabel" destination="gsm-Ox-kM8" id="Bmx-vn-SWm"/>
+                        <outlet property="countDownView" destination="rco-f3-pzR" id="eIL-aH-L67"/>
                         <outlet property="favoriteLabel" destination="NKO-YY-oeC" id="WgA-7U-i8H"/>
                         <outlet property="firstSliderOutlet" destination="Rnc-ob-leO" id="ZBM-Bb-udL"/>
                         <outlet property="mechanicLabel" destination="7XG-bC-JuU" id="NXk-If-t0l"/>
