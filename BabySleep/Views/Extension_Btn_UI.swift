@@ -42,14 +42,14 @@ extension UIView {
     }
     
     func normalButtonUI(){
-        self.layer.cornerRadius = 30
+        self.layer.cornerRadius = 40
         self.layer.masksToBounds = true
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.white.cgColor
     }
     
     func normalButtonIsClickedUI(){
-        self.layer.cornerRadius = 30
+        self.layer.cornerRadius = 40
         self.layer.masksToBounds = true
         self.layer.borderWidth = 2
         self.layer.borderColor = UIColor.white.cgColor
