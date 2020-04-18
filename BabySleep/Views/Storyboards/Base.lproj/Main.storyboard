@@ -475,7 +475,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="star">
+                                                        <state key="normal" image="bus">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -486,7 +486,7 @@
                                                         <rect key="frame" x="132.5" y="0.0" width="117" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="bike">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -497,7 +497,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="heels">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -517,7 +517,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="star">
+                                                        <state key="normal" image="clock">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -528,7 +528,7 @@
                                                         <rect key="frame" x="132.5" y="0.0" width="117" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="vacuumCleaner">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -539,7 +539,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="shower">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -559,7 +559,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="star">
+                                                        <state key="normal" image="radio">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -570,7 +570,7 @@
                                                         <rect key="frame" x="132.5" y="0.0" width="117" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="dishwasher">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -581,7 +581,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="fan">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -601,7 +601,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="star">
+                                                        <state key="normal" image="lullaby">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -612,7 +612,7 @@
                                                         <rect key="frame" x="132.5" y="0.0" width="117" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="lullaby">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -623,7 +623,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="lullaby">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -643,7 +643,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="lullaby">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -654,7 +654,7 @@
                                                         <rect key="frame" x="132.5" y="0.0" width="117" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="lullaby">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -665,7 +665,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="lock2">
+                                                        <state key="normal" image="lullaby">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -1833,28 +1833,36 @@
     <resources>
         <image name="airliner" width="64" height="64"/>
         <image name="babys" width="190" height="103"/>
+        <image name="bike" width="64" height="64"/>
         <image name="bird" width="64" height="64"/>
+        <image name="bus" width="64" height="64"/>
         <image name="cat" width="64" height="64"/>
         <image name="cicada" width="64" height="64"/>
         <image name="city" width="64" height="64"/>
+        <image name="clock" width="64" height="64"/>
         <image name="cloud" width="956" height="338"/>
         <image name="coffee" width="64" height="64"/>
         <image name="crowd" width="64" height="64"/>
+        <image name="dishwasher" width="64" height="64"/>
         <image name="factBg_8" width="640" height="1280"/>
+        <image name="fan" width="64" height="64"/>
         <image name="fire" width="64" height="64"/>
         <image name="flood" width="64" height="64"/>
+        <image name="heels" width="64" height="64"/>
         <image name="highway" width="64" height="64"/>
         <image name="knowledge" width="24" height="24"/>
-        <image name="lock2" width="64" height="64"/>
+        <image name="lullaby" width="64" height="64"/>
+        <image name="radio" width="64" height="64"/>
         <image name="rain" width="64" height="64"/>
         <image name="seagull" width="64" height="64"/>
         <image name="settings-work-tool (1)" width="24" height="24"/>
+        <image name="shower" width="64" height="64"/>
         <image name="snow" width="64" height="64"/>
         <image name="sounds-between-headphones (1)" width="24" height="24"/>
-        <image name="star" width="64" height="64"/>
         <image name="storm" width="64" height="64"/>
         <image name="sunset" width="64" height="64"/>
         <image name="train" width="64" height="64"/>
+        <image name="vacuumCleaner" width="64" height="64"/>
         <image name="waterfall" width="64" height="64"/>
         <image name="wind" width="64" height="64"/>
     </resources>

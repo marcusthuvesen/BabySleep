@@ -51,21 +51,21 @@ struct AudioFiles {
         case 18:
             soundName = "city"
         case 19:
-            soundName = "cat"
+            soundName = "bus"
         case 20:
-            soundName = "seagull"
+            soundName = "bicycle"
         case 21:
-            soundName = "train"
+            soundName = "heels"
         case 22:
-            soundName = "crowd"
+            soundName = "clock"
         case 23:
-            soundName = "airliner"
+            soundName = "vacuumCleaner"
         case 24:
-            soundName = "highway"
+            soundName = "shower"
         case 25:
-            soundName = "coffee"
+            soundName = "radioBuzz"
         case 26:
-            soundName = "city"
+            soundName = "dishwasher"
         case 27:
             soundName = "fan"
         case 28:
