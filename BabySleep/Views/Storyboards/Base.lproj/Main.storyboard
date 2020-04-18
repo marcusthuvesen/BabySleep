@@ -15,18 +15,18 @@
             <objects>
                 <viewController id="cjl-3Q-Pon" customClass="SoundVC_UI" customModule="BabySleep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wVt-2H-FgH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2417"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2234"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-og-PH9">
-                                <rect key="frame" x="0.0" y="-8" width="414" height="2362"/>
+                                <rect key="frame" x="0.0" y="-8" width="414" height="2179"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pfR-V4-hrg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="2362"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2179"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uX-O9-2Wf">
-                                        <rect key="frame" x="0.0" y="-27" width="414" height="1820"/>
+                                        <rect key="frame" x="0.0" y="-27" width="414" height="2180"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76u-Wl-Hrm">
                                                 <rect key="frame" x="171" y="145" width="118" height="40"/>
@@ -828,7 +828,7 @@
                                             <constraint firstItem="KUx-Ux-K27" firstAttribute="width" secondItem="Quz-Zd-Hyj" secondAttribute="width" id="Z6C-fh-YSv"/>
                                             <constraint firstItem="DXk-me-6F0" firstAttribute="top" secondItem="jwz-SX-ahF" secondAttribute="bottom" constant="16" id="ZRY-C1-jn3"/>
                                             <constraint firstAttribute="trailing" secondItem="NJp-UI-Tae" secondAttribute="trailing" constant="20" id="acn-cF-hOz"/>
-                                            <constraint firstAttribute="height" constant="1820" id="b5E-bB-XxC"/>
+                                            <constraint firstAttribute="height" constant="2180" id="b5E-bB-XxC"/>
                                             <constraint firstItem="nu8-2A-vXl" firstAttribute="leading" secondItem="2uX-O9-2Wf" secondAttribute="leading" constant="16" id="bVa-k6-SA9"/>
                                             <constraint firstItem="9CY-Fp-PvN" firstAttribute="top" secondItem="NA2-hk-8J4" secondAttribute="bottom" constant="16" id="bWe-ju-Bhj"/>
                                             <constraint firstAttribute="trailing" secondItem="HIM-cw-yyB" secondAttribute="trailing" constant="16" id="br0-Yp-qWd"/>
@@ -920,11 +920,11 @@
                                     <constraint firstAttribute="trailing" secondItem="2uX-O9-2Wf" secondAttribute="trailing" id="IFB-0P-ZWw"/>
                                     <constraint firstItem="2uX-O9-2Wf" firstAttribute="leading" secondItem="pfR-V4-hrg" secondAttribute="leading" id="JNs-a2-HGh"/>
                                     <constraint firstItem="2uX-O9-2Wf" firstAttribute="top" secondItem="pfR-V4-hrg" secondAttribute="top" constant="-27" id="eFh-Pp-Z1G"/>
-                                    <constraint firstAttribute="bottom" secondItem="2uX-O9-2Wf" secondAttribute="bottom" constant="362" id="kPl-SX-w7c"/>
+                                    <constraint firstAttribute="bottom" secondItem="2uX-O9-2Wf" secondAttribute="bottom" constant="18" id="kPl-SX-w7c"/>
                                 </constraints>
                             </scrollView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rco-f3-pzR">
-                                <rect key="frame" x="0.0" y="2337" width="75" height="25"/>
+                                <rect key="frame" x="0.0" y="2154" width="75" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsm-Ox-kM8">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="25"/>
@@ -944,7 +944,7 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adp-Ir-B3F">
-                                <rect key="frame" x="0.0" y="2362" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="2179" width="414" height="60"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-ob-leO">
                                         <rect key="frame" x="18" y="15" width="107.5" height="31"/>
@@ -989,7 +989,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ2-Ze-KUn" customClass="PlayBar" customModule="BabySleep" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="2362" width="414" height="55"/>
+                                <rect key="frame" x="0.0" y="2179" width="414" height="55"/>
                                 <color key="backgroundColor" red="0.36470588235294116" green="0.20784313725490194" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Dyv-WY-gSC"/>
@@ -1025,7 +1025,7 @@
                     <tabBarItem key="tabBarItem" title="Sounds" image="sounds-between-headphones (1)" id="4SD-9y-HSd">
                         <color key="badgeColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                     </tabBarItem>
-                    <size key="freeformSize" width="414" height="2500"/>
+                    <size key="freeformSize" width="414" height="2317"/>
                     <connections>
                         <outlet property="bgGradientView" destination="fAL-og-PH9" id="LXy-n6-42B"/>
                         <outlet property="countDownLabel" destination="gsm-Ox-kM8" id="Bmx-vn-SWm"/>
@@ -1112,7 +1112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahB-QR-Sng" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1262.3188405797102" y="-130.58035714285714"/>
+            <point key="canvasLocation" x="1262.3188405797102" y="-130.91517857142856"/>
         </scene>
         <!--SettingsUI-->
         <scene sceneID="seQ-iW-mRr">
@@ -1547,26 +1547,26 @@
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Make your baby tired"/>
                                         <connections>
-                                            <action selector="firstFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="Yu6-UF-8hk"/>
+                                            <action selector="firstFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="JyV-HC-HZp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-Oc-mac">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-Oc-mac">
                                         <rect key="frame" x="0.0" y="162" width="414" height="162"/>
                                         <color key="backgroundColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="tintColor" red="0.36470588240000001" green="0.20784313730000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Ways to put baby to sleep"/>
                                         <connections>
-                                            <action selector="secondFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="dB3-kR-zeY"/>
+                                            <action selector="firstFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="NrK-cB-nib"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-G2-BpK">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-G2-BpK">
                                         <rect key="frame" x="0.0" y="324" width="414" height="162"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <state key="normal" title="Make baby sleep longer"/>
                                         <connections>
-                                            <action selector="thirdFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="qYS-Ij-Nnv"/>
+                                            <action selector="firstFactBtn:" destination="XhM-Ma-LGD" eventType="touchUpInside" id="yG2-SQ-GqW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1612,12 +1612,12 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="1bA-6w-vdN"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstFactBtnOutlet" destination="xgn-Bf-Wfq" id="F1U-9Z-3Zn"/>
+                        <outlet property="firstFactBtnOutlet" destination="xgn-Bf-Wfq" id="JyZ-4n-qxi"/>
                         <outlet property="firstFactView" destination="u7Q-CC-y9p" id="qaI-KG-Nnf"/>
                         <outlet property="playBarContainerView" destination="jYx-mN-CWu" id="2Aq-9K-U20"/>
-                        <outlet property="secondFactBtnOutlet" destination="CYc-Oc-mac" id="hx5-nJ-3jC"/>
+                        <outlet property="secondFactBtnOutlet" destination="CYc-Oc-mac" id="usw-FK-SRw"/>
                         <outlet property="secondFactView" destination="BgW-bi-Ap3" id="vo2-jb-pGT"/>
-                        <outlet property="thirdFactBtnOutlet" destination="JTw-G2-BpK" id="YD1-Gn-6BE"/>
+                        <outlet property="thirdFactBtnOutlet" destination="JTw-G2-BpK" id="lEU-oC-qtq"/>
                         <outlet property="thirdFactView" destination="chp-AK-0Hi" id="H0a-ep-oJQ"/>
                         <segue destination="Fkx-Ty-2fH" kind="show" identifier="SpecificFact_UI_Segue" id="aUW-QW-3uh"/>
                     </connections>

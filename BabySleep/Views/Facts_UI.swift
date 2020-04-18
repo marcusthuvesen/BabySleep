@@ -28,10 +28,7 @@ class Facts_UI: UIViewController, FactsDelegate {
         setupFactUI()
         setupFactsDelegate()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        factsPresenter.setPlayButtonUI()
-    }
-    
+   
     func setupFactUI(){
 //        firstFactBtnOutlet.imageView?.contentMode = UIView.ContentMode.scaleAspectFill
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
@@ -61,15 +58,8 @@ class Facts_UI: UIViewController, FactsDelegate {
     }
     
     
-    @IBAction func firstFactBtn(_ sender: Any) {
-        factsPresenter.factButtonSelected(buttonPressed: "First")
-    }
-    @IBAction func secondFactBtn(_ sender: Any) {
-        factsPresenter.factButtonSelected(buttonPressed: "Second")
-        
-    }
-    @IBAction func thirdFactBtn(_ sender: Any) {
-        factsPresenter.factButtonSelected(buttonPressed: "Third")
+    @IBAction func firstFactBtn(_ sender: UIButton) {
+        factsPresenter.factButtonSelected(sender: sender)
     }
     
     func pushToVC(specificTitleText : String, specificTextViewText : String){

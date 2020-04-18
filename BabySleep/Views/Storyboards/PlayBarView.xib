@@ -12,9 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayBar" customModule="BabySleep" customModuleProvider="target">
             <connections>
-                <outlet property="favoriteBtnOutlet" destination="sTO-ho-tvK" id="HZ6-0g-gyf"/>
                 <outlet property="playBarView" destination="P8g-l9-6lo" id="PFY-1a-r4G"/>
                 <outlet property="playBtnOutlet" destination="cuU-BE-JYe" id="1Va-XD-5ri"/>
+                <outlet property="premiumBtnOutlet" destination="sTO-ho-tvK" id="nTa-7j-Tqg"/>
                 <outlet property="timerBtnOutlet" destination="cqK-UN-t4i" id="81q-Sb-vCm"/>
             </connections>
         </placeholder>
@@ -59,7 +59,7 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" image="star"/>
                             <connections>
-                                <action selector="favoriteBtnAction:" destination="-1" eventType="touchUpInside" id="aqt-kU-u1D"/>
+                                <action selector="premiumBtnAction:" destination="-1" eventType="touchUpInside" id="27x-C4-xPM"/>
                             </connections>
                         </button>
                     </subviews>
