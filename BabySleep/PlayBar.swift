@@ -20,10 +20,12 @@ class PlayBar: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        print("in override init")
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        print("in common init")
         commonInit()
         playBtnOutlet.addTarget(self, action: #selector(self.playBtnAction(sender:)), for: .touchUpInside)
         
@@ -37,6 +39,7 @@ class PlayBar: UIView {
     }
     
     @objc func handleUnSelectedNotification(notification : Notification){
+        print("in unselected")
         setButtonToUnSelected()
     }
     

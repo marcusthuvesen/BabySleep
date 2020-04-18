@@ -16,7 +16,6 @@ class Facts_UI: UIViewController, FactsDelegate {
     @IBOutlet weak var firstFactView: UIView!
     @IBOutlet weak var secondFactView: UIView!
     @IBOutlet weak var thirdFactView: UIView!
-    @IBOutlet weak var playBarContainerView: PlayBar!
     
     let factsPresenter = FactsPresenter()
     var specificFactTitleText = ""

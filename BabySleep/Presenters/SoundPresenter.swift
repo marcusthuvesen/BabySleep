@@ -46,17 +46,26 @@ class SoundPresenter {
         let soundName = audioNames.provideAudioName(senderTag: sender.tag)
         
         if sender.isSelected{
-            self.soundDelegate?.changeSliderImage(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
-            self.soundDelegate?.soundBtnSelected(senderOutlet : senderOutlet, soundName : soundName)
-            soundsCurrentlyPlaying.saveCurrentSound(soundName: soundName)
-            NotificationCenter.default.post(name: Notification.Name("TriggerPlayBtn"), object: ["play" : true])
-            
+            buttonClickedActions(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
         } else {
-            self.soundDelegate?.removeSliderImage(senderOutlet : sender)
-            self.soundDelegate?.soundBtnUnselected(senderOutlet: senderOutlet, soundName: soundName)
-            if !soundsCurrentlyPlaying.areSoundsPlaying(){
-                NotificationCenter.default.post(name: Notification.Name("TriggerPlayBtn"), object: ["play" : false])
-            }
+            buttonUnClickedActions(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
+        }
+    }
+    
+    func buttonClickedActions(sender : UIButton, senderOutlet : UIImageView, soundName : String){
+        self.soundDelegate?.soundBtnSelected(senderOutlet : senderOutlet, soundName : soundName)
+        self.soundDelegate?.changeSliderImage(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
+        soundsCurrentlyPlaying.saveCurrentSound(soundName: soundName)
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: GlobalVariables.selectedNotification), object: nil)
+        
+    }
+    
+    func buttonUnClickedActions(sender : UIButton, senderOutlet : UIImageView, soundName : String){
+        self.soundDelegate?.removeSliderImage(senderOutlet : sender)
+        self.soundDelegate?.soundBtnUnselected(senderOutlet: senderOutlet, soundName: soundName)
+        if !soundsCurrentlyPlaying.areSoundsPlaying(){
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: GlobalVariables.unselectedNotification), object: nil)
         }
     }
     

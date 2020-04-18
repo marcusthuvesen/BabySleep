@@ -38,7 +38,6 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     @IBOutlet weak var countDownView: UIView!
     @IBOutlet weak var countDownLabel: UILabel!
     
-    @IBOutlet weak var playBarContainerView: PlayBar!
     var defaultThumbImage : UIImage?
     
     let soundPresenter = SoundPresenter()
