@@ -51,11 +51,35 @@ struct AudioFiles {
         case 18:
             soundName = "city"
         case 19:
-            soundName = "babyLullaby_1"
+            soundName = "cat"
         case 20:
-            soundName = "babyLullaby_2"
+            soundName = "seagull"
         case 21:
+            soundName = "train"
+        case 22:
+            soundName = "crowd"
+        case 23:
+            soundName = "airliner"
+        case 24:
+            soundName = "highway"
+        case 25:
+            soundName = "coffee"
+        case 26:
+            soundName = "city"
+        case 27:
+            soundName = "fan"
+        case 28:
+            soundName = "babyLullaby_1"
+        case 29:
+            soundName = "SweetDreams"
+        case 30:
             soundName = "babyLullaby_3"
+        case 31:
+            soundName = "NightTimeLullaby"
+        case 32:
+            soundName = "SleepMusic"
+        case 33:
+            soundName = "SleepingTunes"
         default:
            soundName = "rain"
         }
