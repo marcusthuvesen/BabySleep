@@ -16,8 +16,6 @@ class Settings_UI: UIViewController, MFMailComposeViewControllerDelegate {
     let shareOnSocialMedia = ShareOnSocialMedia()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
        setupSettingsUI()
     }
     
@@ -33,14 +31,9 @@ class Settings_UI: UIViewController, MFMailComposeViewControllerDelegate {
     func gradientBackground(){
         // Create a gradient layer.
         let gradientLayer = CAGradientLayer()
-        // Set the size of the layer to be equal to size of the display.
         gradientLayer.frame = view.bounds
-        // Set an array of Core Graphics colors (.cgColor) to create the gradient.
-        // This example uses a Color Literal and a UIColor from RGB values.
         gradientLayer.colors = [#colorLiteral(red: 0.6941176471, green: 0.3843137255, blue: 0.6352941176, alpha: 1).cgColor, #colorLiteral(red: 0.2941176471, green: 0.1647058824, blue: 0.5607843137, alpha: 1).cgColor]
-        // Rasterize this static layer to improve app performance.
         gradientLayer.shouldRasterize = true
-        // Apply the gradient to the backgroundGradientView.
         bgGradientSettingsView.layer.addSublayer(gradientLayer)
     }
     
@@ -60,21 +53,12 @@ class Settings_UI: UIViewController, MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
     }
-
-    @IBAction func aboutBtn(_ sender: UIButton) {
-     //   let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "About_UI") as! About_UI
-    //    tabBarController?.present(popOverVC, animated: true)
-    }
-    @IBAction func sendFeedbackBtn(_ sender: Any) {
-        let popOverVC = UIStoryboard(name: "AskForFeedbackPopup", bundle: nil).instantiateViewController(withIdentifier: "AskForFeedbackUI") as! AskForFeedbackUI
-        popOverVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-        tabBarController?.present(popOverVC, animated: true)
-    }
     
     @IBAction func settingsPremiumBtn(_ sender: Any) {
-        let popOverVC = UIStoryboard(name: "PremiumPopup", bundle: nil).instantiateViewController(withIdentifier: "PremiumPopup_UI") as! PremiumPopup_UI
-        popOverVC.modalPresentationStyle = .overCurrentContext
-        tabBarController?.present(popOverVC, animated: true)
+        let vc = UIStoryboard(name: "PremiumPopup", bundle: nil).instantiateViewController(withIdentifier: "PremiumPopup_UI") as! PremiumPopup_UI
+        vc.modalPresentationStyle = .overCurrentContext
+        let currentController = PlayBar.shared.getCurrentViewController()
+        currentController?.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func supportBtn(_ sender: UIButton) {

@@ -13,22 +13,53 @@ class SpecificFact_UI: UIViewController {
     @IBOutlet weak var specificFactTitleLabel: UILabel!
     @IBOutlet weak var specificFactTextView: UITextView!
     @IBOutlet weak var bgGradientSpecificFactView: UIView!
+    @IBOutlet weak var specificFactViewHeight: NSLayoutConstraint!
     
     var factTitleText = ""
     var factTextViewText = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         setupSpecificFactUI()
+        //setupAds()
     }
     
-    func setupSpecificFactUI(){
+    func setupSpecificFactUI() {
         specificFactTitleLabel.text = factTitleText
         specificFactTextView.text = factTextViewText
+        setSpecificHeightUI()
         gradientBackground()
     }
     
+//    func setupAds(){
+//        if !CheckSubscription.shared.checkUserSubscription() {
+//            bannerView.adUnitID = "ca-app-pub-3370855627777048/6895986158"
+//            bannerView.rootViewController = self
+//            bannerView.load(GADRequest())
+//            bannerView.delegate = self
+//        }
+//    }
+    
+//    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+//        bannerView.alpha = 0
+//        UIView.animate(withDuration: 1, animations: {
+//            bannerView.alpha = 1
+//        })
+//    }
+    
+    func setSpecificHeightUI() {
+        switch factTitleText {
+        case "Make your baby tired":
+            specificFactViewHeight.constant = CGFloat(1150)
+        case "Putting baby to bed":
+            specificFactViewHeight.constant = CGFloat(1250)
+        case "Make baby sleep longer":
+            specificFactViewHeight.constant = CGFloat(1750)
+        default:
+            specificFactViewHeight.constant = CGFloat(1000)
+        }
+    }
+
     func gradientBackground(){
         // Create a gradient layer.
         let gradientLayer = CAGradientLayer()

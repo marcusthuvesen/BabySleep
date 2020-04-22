@@ -21,8 +21,6 @@ class ProvideFactText{
             textToSendBack = fetchSecondText()
         case 2:
             textToSendBack = fetchThirdText()
-        case 3:
-            textToSendBack = fetchFourthText()
         default:
             textToSendBack = fetchFirstText()
         }
@@ -31,29 +29,25 @@ class ProvideFactText{
     }
     
     func fetchFirstText() -> (String, String){
-        let firstFactsTitle = "The cause of tinnitus"
-        let firstFactsText = "A number of health conditions can cause tinnitus. In many cases, an exact cause is never found. A common cause is inner ear hair cell damage. Tiny, hairs in your inner ear move in relation to the pressure of sound waves. This triggers electrical signals through an auditory nerve from your ear to your brain. Your brain interprets these signals as sound. If the hairs inside your inner ear are bent or broken, they can leak random electrical impulses to your brain, causing tinnitus.\n\nOther causes of tinnitus include other ear problems, chronic health conditions, and injuries or conditions that affect the nerves in your ear or the hearing center in your brain. "
+        let firstFactsTitle = "Make your baby tired"
+        let firstFactsText = "* During the day, allow plenty of sunlight into the house or take him outside. Put your baby down for daytime naps in a well-lit room (unless he has trouble falling asleep at nap time).\n\n* To induce nighttime sleepiness, consider installing dimmers on the lights in your baby's room, but also in other rooms where you both spend lots of time. Lower the lights in the evening (up to two hours before bedtime) to set the mood.\n\n* It's fine to use a night-light in his room, but choose a small, dim one that stays cool to the touch. (Don't plug it in near bedding or drapes.)\n\n* If your child wakes up during the night, don't turn on the lights or carry him into a brightly lit room. The shift from dark to light tells his brain it's go time. Instead, soothe him back to sleep in his dark bedroom.\n\n* If early morning sunlight prompts your child to wake too early, or if he has trouble napping in the afternoon, consider installing room-darkening shades."
         
         return (firstFactsTitle, firstFactsText)
     }
     
     func fetchSecondText() -> (String, String){
-        let secondFactsTitle = "To live with tinnitus"
-        let secondFactsText = "Living with tinnitus can be very difficult. Treatment and coping strategies can help. Here are some tips which may help you cope with the constant noise of tinnitus: Avoid anxiety or stress, as these can stimulate an already sensitive hearing system. \n\n* Have adequate rest.\n\n* Try to avoid the use of stimulants to the nervous system, including coffee (caffeine), alcohol, and smoking (nicotine).\n\n* Use one or two pillows to sleep with your head in an elevated position. Tinnitus may become less noticeable.\n\n* Tinnitus is more noticeable after retiring for the night and the surroundings are quieter. Any continues low noise in the room helps to mask tinnitus and make it less irritating. Try TinAid masking background sounds.\n\n* Some people successfully reduce the experienced tinnitus noise with hearing aid as it amplifies outside noise/n/n* Avoid situations that can further damage hearing like concerts, festivals etc. if you don't use protective ear wear.\n\n* There is numerous facebook groups to join with tinnitus sufferers around the world. Some people find it helpful to share their experience and help others."
+        let secondFactsTitle = "Putting baby to bed"
+        let secondFactsText = "Training your baby to self soothe and sleep through the night is made possible through a technique called “wake and sleep.”\n\n*Here’s how to sleep train your infant with this method:\n\n*Every evening at bedtime, swaddle your little one, turn on rough white noise as loud as a shower, feed and burp her, let her fall asleep in your arms and then lay her down.\n\n*BUT, right after you slide your munchkin into bed, rouse her until her eyes open (tickle her neck, scratch her feet, etc).\n\n*After a few seconds she will close her eyes again and she’ll slide back into slumberland.\n\n*If she fusses, she may be hungry or uncomfortable, so pick her up to feed and calm her, but be sure to wake her again when you put her back down.\n\n*I know it sounds crazy, but those few seconds of drowsy waking are the first baby steps to helping your infant learn how to sleep through the night!"
         
         return (secondFactsTitle, secondFactsText)
     }
     
     func fetchThirdText() -> (String, String){
-        let thirdFactsTitle = "Can it be cured?"
-        let thirdFactsText = "Occasionally, the cause of tinnitus can be treated. For instance, if the noise in the ears is caused by a middle ear infection, antibiotics may solve the problem.\n\nUnfortunately for most people the tinnitus is permanent, however some people can experience temporary relief from various exercises. We highly recommend testing the tinnitus matcher and head tapping technique."
+        let thirdFactsTitle = "Make baby sleep longer"
+        let thirdFactsText = "If your baby isn’t napping enough during the day, he or she will be more apt to wake up at the crack of dawn—or even before. Sleep needs vary by age, so find out what amount is likely best for your tot.\n\n*Adjust the Bedtime. Putting your baby to bed too late may actually lead to sleep deprivation and cause your child to wake up earlier than he or she is ready. Try putting your baby to bed 15 minutes earlier each night and see if he or she sleeps slightly later in the morning.\n\n*Do a Dream Feeding. If your baby is less than eight months old and you suspect that he or she is waking up before dawn because of hunger, try giving your child a bottle at about 11:00pm, taking care to rouse him as little as possible. This might be enough to stop any hunger pains from luring him awake all too early.\n\n*Keep it Pretty Dark. Lots of bright sunlight shining through the curtains at sunrise may be waking your baby up, so use blackout shades to keep the room dark and make it easier for your baby to stay asleep. But you don't want the room to be too dark. Plugging in a very dim nightlight may soothe a child who is afraid of the pitch black and help him or her see the familiar, comforting surroundings.\n\n*Block Out Noise. Sirens, a running shower, and even chirping birds can trigger your bundle of joy to rise and shine a bit too soon. Try using a sound conditioner, often called a white noise machine, to mask loud interruptions and help your baby associate that sound with sleep.\n\n*Keep Your Baby Comfortable. A wet or dirty diaper may be waking up your baby, so if this is a problem, try switching from regular diapers to overnight diapers. A room that’s too hot or too cold can also disrupt sleep, so keep the temperature between 65 and 70 degrees Fahrenheit. Adults generally need a cooler room (60 to 67 degrees) but smaller children are often more comfortable with a bit more warmth.\n\n*Let Him Be. Going to get your baby as soon as he or she wakes in the early morning hours may reinforce that it’s okay to get up at that time. Consider letting the child be for about 30 minutes and see if your baby can soothe himself or herself back to sleep. If your child is old enough to sit up, try placing a few soft toys in the crib, so that if your baby does wake up, he or she can play for a little while before possibly going back to sleep for a bit longer.\n\n*Set an Alarm. Think about using an alarm or a light with a timer on it and setting it for a more acceptable hour (say 6:00am, rather than 4:30am) to help your baby better understand when it is time to get up. Do not let your child get up for the day before the light or music alarm goes off or they will not take the timer seriously (though you might go in and tell them it’s not time to get up yet if they’re really crying)."
+        
         return (thirdFactsTitle, thirdFactsText)
         
-    }
-    func fetchFourthText() -> (String, String){
-        let fourthFactsTitle = "Prevent more tinnitus"
-        let fourthFactsText = "To treat your tinnitus, your doctor will first try to identify any underlying, treatable condition that may be associated with your symptoms. It is always recommended to not listen to high volume music or expose the ears to continuous high volume sounds.\n\nTinnitus may come due to a health condition. If so, your doctor may be able to take steps that could reduce the noise in your ears.\n\n Examples include:\n\n* Earwax removal. Removing earwax can decrease tinnitus symptoms in some cases.\n\n* Treating a blood vessel condition. Underlying vascular conditions may require medication, surgery or another treatment to address the problem.\n\n* Changing medications. If you take medications that appears to be the cause of your tinnitus, your doctor may recommend stopping or reducing the drug, or switching to a different medication."
-        return (fourthFactsTitle, fourthFactsText)
     }
     
 }
