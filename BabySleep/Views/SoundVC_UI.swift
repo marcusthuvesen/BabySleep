@@ -42,6 +42,10 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
     
     var defaultThumbImage : UIImage?
     
+    @IBOutlet var premiumAvatarImages: [UIImageView]!
+    
+    
+    
     let soundPresenter = SoundPresenter()
     var previousThirdSender : UIButton?
     var previousThirdSoundName : String?
@@ -134,8 +138,15 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
         menuBtnThree.menuBtnUI()
         countDownView.layer.cornerRadius = 15
         countDownView.layer.maskedCorners = [.layerMaxXMinYCorner]
+        lockForNonPremiumUsers()
     }
     
+    func lockForNonPremiumUsers(){
+        for avatarImage in premiumAvatarImages{
+            avatarImage.image = UIImage(named : "star")
+            avatarImage.tintColor = UIView.CustomColors.gold
+        }
+    }
     
     
     func soundBtnSelected(senderOutlet : UIImageView, soundName : String) {
