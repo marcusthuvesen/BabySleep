@@ -70,6 +70,7 @@ class SoundPresenter {
         }
     }
     
+    
     func showAdWhenApproptiate(){
         adsCounter += 1
         if (adsCounter == 4 || adsCounter % 12 == 0) && !CheckSubscription.shared.checkUserSubscription(){

@@ -128,7 +128,6 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
     }
     
     func setupSoundVC_UI(){
-        
         for image in btnBackgroundImages{
             image.normalButtonUI()
         }
@@ -138,10 +137,10 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
         menuBtnThree.menuBtnUI()
         countDownView.layer.cornerRadius = 15
         countDownView.layer.maskedCorners = [.layerMaxXMinYCorner]
-        lockForNonPremiumUsers()
+        premiumStarTint()
     }
     
-    func lockForNonPremiumUsers(){
+    func premiumStarTint(){
         for avatarImage in premiumAvatarImages{
             avatarImage.image = UIImage(named : "star")
             avatarImage.tintColor = UIView.CustomColors.gold
