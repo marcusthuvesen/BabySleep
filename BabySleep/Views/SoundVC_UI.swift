@@ -10,8 +10,9 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 import Firebase
+import GoogleMobileAds
 
-class SoundVC_UI: UIViewController, SoundDelegate{
+class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
     
     @IBOutlet weak var bgGradientView: UIView!
     //Button Outlets
@@ -31,8 +32,9 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     @IBOutlet weak var secondSliderOutlet: UISlider!
     @IBOutlet weak var thirdSliderOutlet: UISlider!
     @IBOutlet weak var soundScrollView: UIScrollView!
-    @IBOutlet weak var favoriteLabel: UILabel!
-    @IBOutlet weak var mechanicLabel: UILabel!
+    
+    @IBOutlet weak var houseHoldLabel: UILabel!
+    @IBOutlet weak var publicLabel: UILabel!
     @IBOutlet weak var natureLabel: UILabel!
     
     @IBOutlet weak var countDownView: UIView!
@@ -49,6 +51,7 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     var secondSliderSoundName : String?
     var thirdSliderSoundName : String?
     static let soundVC = SoundVC_UI()
+    private var googleAdMobUnit = GoogleAdMobUnit()
     
     override func viewWillAppear(_ animated: Bool) {
         PlayBar.currentWindow = self
@@ -61,6 +64,7 @@ class SoundVC_UI: UIViewController, SoundDelegate{
         hideKeyboardWhenTappedAround()
         gradientBackground()
     }
+
     func gradientBackground(){
         // Create a gradient layer.
         let gradientLayer = CAGradientLayer()
@@ -77,6 +81,10 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     
     func setupSoundDelegate(){
         soundPresenter.setSoundViewDelegate(soundDelegate: self)
+    }
+    
+    func showAds() {
+        googleAdMobUnit.showInterstitialAd(VC: self)
     }
     
     func hideSliderContainer() {
@@ -266,11 +274,11 @@ class SoundVC_UI: UIViewController, SoundDelegate{
     }
     
     @IBAction func menuBtnTwo(_ sender: Any) {
-        self.soundScrollView.scrollToView(view: self.mechanicLabel, animated: true)
+        self.soundScrollView.scrollToView(view: self.publicLabel, animated: true)
     }
     
     @IBAction func menuBtnThree(_ sender: Any) {
-        self.soundScrollView.scrollToView(view: self.favoriteLabel, animated: true)
+        self.soundScrollView.scrollToView(view: self.houseHoldLabel, animated: true)
     }
     
 }

@@ -16,6 +16,7 @@ protocol SoundDelegate : NSObjectProtocol{
     func removeSliderImage(senderOutlet : UIButton)
     func hideSliderContainer()
     func changeCountDownTime(timeString : String)
+    func showAds()
     func showCountDownTimeView()
     func hideCountDownTimeView()
 }
@@ -27,7 +28,7 @@ class SoundPresenter {
     private var firstSliderOutlet : UISlider?
     private var secondSliderOutlet : UISlider?
     private var thirdSliderOutlet : UISlider?
-    
+    private var adsCounter = 0
     
     func setSoundViewDelegate(soundDelegate : SoundDelegate){
         self.soundDelegate = soundDelegate
@@ -56,7 +57,7 @@ class SoundPresenter {
         self.soundDelegate?.soundBtnSelected(senderOutlet : senderOutlet, soundName : soundName)
         self.soundDelegate?.changeSliderImage(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
         soundsCurrentlyPlaying.saveCurrentSound(soundName: soundName)
-        
+        showAdWhenApproptiate()
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: GlobalVariables.selectedNotification), object: nil)
         
     }
@@ -66,6 +67,13 @@ class SoundPresenter {
         self.soundDelegate?.soundBtnUnselected(senderOutlet: senderOutlet, soundName: soundName)
         if !soundsCurrentlyPlaying.areSoundsPlaying(){
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: GlobalVariables.unselectedNotification), object: nil)
+        }
+    }
+    
+    func showAdWhenApproptiate(){
+        adsCounter += 1
+        if (adsCounter == 4 || adsCounter % 12 == 0) && !CheckSubscription.shared.checkUserSubscription(){
+            self.soundDelegate?.showAds()
         }
     }
     
