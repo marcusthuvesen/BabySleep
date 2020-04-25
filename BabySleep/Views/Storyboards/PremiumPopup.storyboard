@@ -77,6 +77,9 @@
                                                 <state key="normal" title="Restore Purchases">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="restorePurchaseBtn:" destination="59c-xY-qYI" eventType="touchUpInside" id="eCh-WX-3Zv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

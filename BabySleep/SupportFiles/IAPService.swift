@@ -1,10 +1,11 @@
 //
 //  IAPService.swift
-//  BabySleep
+//  Tinnitus
 //
-//  Created by Marcus Thuvesen on 2020-04-23.
-//  Copyright © 2020 Marcus Thuvesen. All rights reserved.
+//  Created by Marcus Thuvesen on 2019-10-23.
+//  Copyright © 2019 Marcus Thuvesen. All rights reserved.
 //
+
 import Foundation
 import StoreKit
 
@@ -17,8 +18,7 @@ class IAPService: NSObject {
     let paymentQueue = SKPaymentQueue.default()
     
     func getProducts() {
-        let products: Set = [IAPProduct.autoRenewing12Months.rawValue]
-        
+        let products: Set = [IAPProduct.twelveMonthSubscription.rawValue]
         let request = SKProductsRequest(productIdentifiers: products)
         request.delegate = self
         request.start()
@@ -32,7 +32,6 @@ class IAPService: NSObject {
     }
     
     func restorePurchases(){
-        print("resotring purchases")
         paymentQueue.restoreCompletedTransactions()
     }
     

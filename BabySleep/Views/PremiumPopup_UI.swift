@@ -16,15 +16,10 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     }
     func thirdSubBtnActions() {
     }
-    
-    
  
     @IBOutlet weak var backgroundPopupImage: UIImageView!
     @IBOutlet weak var premiumContainerView: UIView!
-    
     @IBOutlet weak var secondSubBtnOutlet: UIButton!
-   
-    
     @IBOutlet weak var popupCollectionView: UICollectionView!
     @IBOutlet weak var popupCVPageController: UIPageControl!
     
@@ -32,7 +27,6 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     
     lazy var popupCollectionView_UI: PopupCollectionView_UI = {
         let popupCollectionView_UI = PopupCollectionView_UI(popupCVPageController : popupCVPageController, popupCollectionView : popupCollectionView)
-        
         return popupCollectionView_UI
     }()
     
@@ -49,10 +43,6 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     }
     
     func setupPremiumPopupUI(){
-        //premiumContainerView.premiumPopupContainerUI()
-      //backgroundPopupImage.addBlurEffect()
-        
-       // firstSubBtnOutlet.normalButtonUI()
         secondSubBtnOutlet.premiumPopupContinueUI()
     }
     
@@ -61,7 +51,9 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     }
  
     @IBAction func secondSubBtnClicked(_ sender: UIButton) {
-        premiumPopupPresenter.whatButtonClicked(buttonName: "second")
+       print("subbtn clicked")
+        premiumPopupPresenter.whatButtonClicked()
+        premiumPopupPresenter.sendToSelectedSubscription()
     }
     
     @IBAction func termsOfUseBtn(_ sender: UIButton) {
@@ -72,6 +64,14 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     @IBAction func privacyPolicyBtn(_ sender: UIButton) {
         openUrl(urlStr: "https://baby-sleep-0.flycricket.io/privacy.html")
     }
+    
+    @IBAction func restorePurchaseBtn(_ sender: UIButton) {
+        IAPService.shared.restorePurchases()
+        let alert = UIAlertController(title: "Restored", message: "Your purchases are restored.", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     
     func openUrl(urlStr: String!) {
         if let url = URL(string:urlStr), !url.absoluteString.isEmpty {

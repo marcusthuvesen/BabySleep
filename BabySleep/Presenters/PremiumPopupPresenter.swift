@@ -18,24 +18,23 @@ protocol PremiumPopupDelegate: NSObjectProtocol {
 class PremiumPopupPresenter{
     
     weak private var premiumPopupDelegate : PremiumPopupDelegate?
-   
+    
+    init() {
+      IAPService.shared.getProducts()
+    }
+    
+    
     func setViewDelegate(premiumPopupDelegate : PremiumPopupDelegate){
         self.premiumPopupDelegate = premiumPopupDelegate
     }
-   
-    func whatButtonClicked(buttonName : String){
-        switch buttonName {
-        case "first":
-            self.premiumPopupDelegate?.firstSubBtnActions()
-        case "second":
-            self.premiumPopupDelegate?.secondSubBtnActions()
-        case "third":
-            self.premiumPopupDelegate?.thirdSubBtnActions()
-        default:
-            self.premiumPopupDelegate?.secondSubBtnActions()
-        }
-        
+    
+    func whatButtonClicked(){
+        self.premiumPopupDelegate?.secondSubBtnActions()
     }
     
-    
+    func sendToSelectedSubscription(){
+        print("send to selected subs")
+        IAPService.shared.purchase(product: .twelveMonthSubscription)
+    }
 }
+
