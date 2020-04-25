@@ -19,11 +19,6 @@ class PremiumPopupPresenter{
     
     weak private var premiumPopupDelegate : PremiumPopupDelegate?
     
-    init() {
-      IAPService.shared.getProducts()
-    }
-    
-    
     func setViewDelegate(premiumPopupDelegate : PremiumPopupDelegate){
         self.premiumPopupDelegate = premiumPopupDelegate
     }
@@ -33,7 +28,6 @@ class PremiumPopupPresenter{
     }
     
     func sendToSelectedSubscription(){
-        print("send to selected subs")
         IAPService.shared.purchase(product: .twelveMonthSubscription)
     }
 }
