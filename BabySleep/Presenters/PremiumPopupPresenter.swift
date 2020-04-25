@@ -10,24 +10,21 @@ import Foundation
 import UIKit
 
 protocol PremiumPopupDelegate: NSObjectProtocol {
-    func firstSubBtnActions()
-    func secondSubBtnActions()
-    func thirdSubBtnActions()
+   
 }
 
 class PremiumPopupPresenter{
     
     weak private var premiumPopupDelegate : PremiumPopupDelegate?
     
+    
     func setViewDelegate(premiumPopupDelegate : PremiumPopupDelegate){
         self.premiumPopupDelegate = premiumPopupDelegate
     }
     
-    func whatButtonClicked(){
-        self.premiumPopupDelegate?.secondSubBtnActions()
-    }
     
     func sendToSelectedSubscription(){
+        print("send to selected subs")
         IAPService.shared.purchase(product: .twelveMonthSubscription)
     }
 }

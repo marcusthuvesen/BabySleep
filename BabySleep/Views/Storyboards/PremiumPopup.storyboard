@@ -233,7 +233,7 @@
                         <outlet property="popupCVPageController" destination="pCf-dx-Mbz" id="4vV-UR-UbY"/>
                         <outlet property="popupCollectionView" destination="xdN-Sh-Okw" id="yus-3m-mng"/>
                         <outlet property="premiumContainerView" destination="nSx-ml-85N" id="BND-Bn-VBL"/>
-                        <outlet property="secondSubBtnOutlet" destination="0Qj-r0-oNT" id="PFZ-M4-GYn"/>
+                        <outlet property="secondSubBtnOutlet" destination="0Qj-r0-oNT" id="qWD-U7-khB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyf-pg-wAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

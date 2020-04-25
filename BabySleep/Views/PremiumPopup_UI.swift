@@ -9,15 +9,7 @@
 import UIKit
 
 class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPopupDelegate{
-    
-    func firstSubBtnActions() {
-    }
-    func secondSubBtnActions() {
-    }
-    func thirdSubBtnActions() {
-    }
  
-    @IBOutlet weak var backgroundPopupImage: UIImageView!
     @IBOutlet weak var premiumContainerView: UIView!
     @IBOutlet weak var secondSubBtnOutlet: UIButton!
     @IBOutlet weak var popupCollectionView: UICollectionView!
@@ -34,6 +26,7 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
         super.viewDidLoad()
         setupDelegates()
         setupPremiumPopupUI()
+        IAPService.shared.getProducts()
     }
     
     func setupDelegates(){
@@ -51,8 +44,6 @@ class PremiumPopup_UI: UIViewController, UIPageViewControllerDelegate, PremiumPo
     }
  
     @IBAction func secondSubBtnClicked(_ sender: UIButton) {
-       print("subbtn clicked")
-        premiumPopupPresenter.whatButtonClicked()
         premiumPopupPresenter.sendToSelectedSubscription()
     }
     
