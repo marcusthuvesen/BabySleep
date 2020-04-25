@@ -72,5 +72,11 @@ class Settings_UI: UIViewController, MFMailComposeViewControllerDelegate {
     @IBAction func shareOnSocialMediaBtn(_ sender: Any) {
         shareOnSocialMedia.shareAppOnSocialMedia(vc : self)
     }
+    @IBAction func restoreSubscription(_ sender: UIButton) {
+        IAPService.shared.restorePurchases()
+        let alert = UIAlertController(title: "Restored", message: "Your purchases are restored.", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
 }
