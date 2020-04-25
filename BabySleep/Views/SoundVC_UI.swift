@@ -56,6 +56,8 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
     var thirdSliderSoundName : String?
     static let soundVC = SoundVC_UI()
     private var googleAdMobUnit = GoogleAdMobUnit()
+    let soundBtnPremiumSenders = [2,7,11,15,16,21,22,27,28,30,32]
+    
     
     override func viewWillAppear(_ animated: Bool) {
         PlayBar.currentWindow = self
@@ -156,6 +158,13 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
         SoundVC_UI.soundsCurrentlyPlaying.playSound(fileName: soundName, currentVolume: currentVolume)
     }
     
+    func soundBtnUnselected(senderOutlet : UIImageView, soundName : String) {
+        senderOutlet.backgroundColor = UIView.CustomColors.blue
+        SoundVC_UI.soundsCurrentlyPlaying.stopSound(stopFileName: soundName)
+        hideSliderContainer()
+    }
+    
+    
     func checkCurrentSliderVolume() -> Float{
         let sliderNumberForNewSound = checkNumberOfEmptySliders()
         var currentVolume : Float = 0.0
@@ -172,11 +181,6 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
         return currentVolume
     }
     
-    func soundBtnUnselected(senderOutlet : UIImageView, soundName : String) {
-        senderOutlet.backgroundColor = UIView.CustomColors.blue
-        SoundVC_UI.soundsCurrentlyPlaying.stopSound(stopFileName: soundName)
-        hideSliderContainer()
-    }
     
     func checkNumberOfEmptySliders() -> Int{
         var firstEmptySpot = 0
@@ -254,9 +258,15 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
         presentPopup(UIStoryboardName: "SleepTimerPopup", WithIdentifier: "SleepTimerPopup_UI", tabBarController: tabBarController ?? nil)
     }
     
-    @IBAction func firstSoundBtn(_ sender: UIButton) {
-        print("soundName btn clicked is \(sender)")
-        soundPresenter.soundButtonClicked(senderOutlet: btnBackgroundImages[sender.tag-1], sender: sender)
+    @IBAction func soundBtn(_ sender: UIButton) {
+        if !soundBtnPremiumSenders.contains(sender.tag) || CheckSubscription.shared.checkUserSubscription(){
+            soundPresenter.soundButtonClicked(senderOutlet: btnBackgroundImages[sender.tag-1], sender: sender)
+        }else if !CheckSubscription.shared.checkUserSubscription(){
+            let vc = UIStoryboard(name: "PremiumPopup", bundle: nil).instantiateViewController(withIdentifier: "PremiumPopup_UI") as! PremiumPopup_UI
+            vc.modalPresentationStyle = .overCurrentContext
+            let currentController = PlayBar.shared.getCurrentViewController()
+            currentController?.present(vc, animated: true, completion: nil)
+        }
     }
 
     @IBAction func firstSliderAction(_ sender: UISlider) {
