@@ -40,7 +40,7 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="4kl-SE-Vlh">
-                                                <rect key="frame" x="5" y="50" width="404.00000000000023" height="180"/>
+                                                <rect key="frame" x="5" y="50" width="404" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="5ku-yW-7D4"/>
                                                 </constraints>
@@ -245,7 +245,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="storm">
+                                                        <state key="normal" image="cicada2">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -265,7 +265,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="flood">
+                                                        <state key="normal" image="wave">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -287,7 +287,7 @@
                                                         <rect key="frame" x="265.5" y="0.0" width="116.5" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <state key="normal" image="cicada">
+                                                        <state key="normal" image="storm">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -709,7 +709,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babys" translatesAutoresizingMaskIntoConstraints="NO" id="dNU-Dd-Xsn">
-                                                <rect key="frame" x="107" y="30" width="200" height="106.00000000000003"/>
+                                                <rect key="frame" x="107" y="30" width="200" height="106"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="FQm-p0-ftT"/>
                                                     <constraint firstAttribute="height" constant="106" id="R9C-lK-wSt"/>
@@ -1367,7 +1367,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l72-fl-jci">
                                                                 <rect key="frame" x="8" y="1" width="382" height="79"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <state key="normal" title="Manage Subscription">
+                                                                <state key="normal" title="Restore Subscription">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -1808,7 +1808,7 @@
         <image name="bird" width="64" height="64"/>
         <image name="bus" width="64" height="64"/>
         <image name="cat" width="64" height="64"/>
-        <image name="cicada" width="64" height="64"/>
+        <image name="cicada2" width="64" height="64"/>
         <image name="city" width="64" height="64"/>
         <image name="clock" width="64" height="64"/>
         <image name="cloud" width="956" height="338"/>
@@ -1818,7 +1818,6 @@
         <image name="factBg_8" width="640" height="1280"/>
         <image name="fan" width="64" height="64"/>
         <image name="fire" width="64" height="64"/>
-        <image name="flood" width="64" height="64"/>
         <image name="heels" width="64" height="64"/>
         <image name="highway" width="64" height="64"/>
         <image name="knowledge" width="24" height="24"/>
@@ -1836,6 +1835,7 @@
         <image name="train" width="64" height="64"/>
         <image name="vacuumCleaner" width="64" height="64"/>
         <image name="waterfall" width="64" height="64"/>
+        <image name="wave" width="64" height="64"/>
         <image name="wind" width="64" height="64"/>
     </resources>
     <color key="tintColor" red="0.95294117647058818" green="0.32549019607843138" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

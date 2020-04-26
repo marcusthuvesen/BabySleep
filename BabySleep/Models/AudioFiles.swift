@@ -19,19 +19,19 @@ struct AudioFiles {
         case 2:
             soundName = "beachWaves"
         case 3:
-            soundName = "thunder"
+            soundName = "cicadas"
         case 4:
-            soundName = "waves"
+            soundName = "wavesFlood"
         case 5:
             soundName = "fire"
         case 6:
-            soundName = "cicadas"
+            soundName = "thunder"
         case 7:
             soundName = "bird"
         case 8:
             soundName = "wind"
         case 9:
-            soundName = "waterfall"
+            soundName = "waterfall2"
         case 10:
            soundName = "snow"
         case 11:
