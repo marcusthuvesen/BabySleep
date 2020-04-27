@@ -156,6 +156,7 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
         senderOutlet.backgroundColor = UIView.CustomColors.blue
         SoundVC_UI.soundsCurrentlyPlaying.stopSound(stopFileName: soundName)
         hideSliderContainer()
+        soundPresenter.sendToPopups()
     }
     
     
@@ -249,7 +250,11 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
     }
    
     func showSleepTimerPopup(){
-        presentPopup(UIStoryboardName: "SleepTimerPopup", WithIdentifier: "SleepTimerPopup_UI", tabBarController: tabBarController ?? nil)
+        presentPopup(UIStoryboardName: "SleepTimerPopup", WithIdentifier: "SleepTimerPopup_UI", tabBarVC: tabBarController ?? nil)
+    }
+    
+    func sendToAskForFeedback() {
+        presentPopup(UIStoryboardName: "AskForFeedbackPopup", WithIdentifier: "AskForFeedbackUI", tabBarVC: tabBarController ?? nil)
     }
     
     @IBAction func soundBtn(_ sender: UIButton) {
@@ -276,11 +281,7 @@ class SoundVC_UI: UIViewController, SoundDelegate, GADInterstitialDelegate{
     }
     
     func sendToPopup(){
-        presentPopup(UIStoryboardName: "PremiumPopup", WithIdentifier: "PremiumPopup_UI", tabBarController: tabBarController ?? nil)
-    }
-    
-    func sendToFavoritePopup(){
-        presentPopup(UIStoryboardName: "NewFavoritePopup", WithIdentifier: "NewFavoritePopup", tabBarController: tabBarController ?? nil)
+        presentPopup(UIStoryboardName: "PremiumPopup", WithIdentifier: "PremiumPopup_UI", tabBarVC: tabBarController ?? nil)
     }
     
     @IBAction func menuBtnOne(_ sender: Any) {

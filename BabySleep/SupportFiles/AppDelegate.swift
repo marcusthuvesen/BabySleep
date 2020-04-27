@@ -21,8 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupAudioSession()
         UIApplication.shared.beginReceivingRemoteControlEvents()
         FirebaseApp.configure()
-        
+        howManyTimesOpenedApp()
         return true
+    }
+    
+    func howManyTimesOpenedApp(){
+        let numberOfTimes = UserDefaults.standard.integer(forKey: "numberOfTimes")
+        UserDefaults.standard.set(numberOfTimes+1, forKey: "numberOfTimes")
     }
     
     func setupAudioSession(){

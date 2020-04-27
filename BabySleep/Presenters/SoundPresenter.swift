@@ -19,7 +19,9 @@ protocol SoundDelegate : NSObjectProtocol{
     func showAds()
     func showCountDownTimeView()
     func hideCountDownTimeView()
+    func sendToAskForFeedback()
 }
+
 
 class SoundPresenter {
     weak private var soundDelegate : SoundDelegate?
@@ -50,6 +52,18 @@ class SoundPresenter {
             buttonClickedActions(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
         } else {
             buttonUnClickedActions(sender : sender, senderOutlet : senderOutlet, soundName : soundName)
+        }
+    }
+    
+    func sendToPopups(){
+        if !GlobalVariables.hasShownPopup{
+            let numberOfTimes = UserDefaults.standard.integer(forKey: "numberOfTimes")
+            if numberOfTimes == 3{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                    self.soundDelegate?.sendToAskForFeedback()
+                }
+            }
+            GlobalVariables.hasShownPopup = true
         }
     }
     

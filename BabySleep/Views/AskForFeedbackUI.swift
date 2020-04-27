@@ -36,7 +36,7 @@ class AskForFeedbackUI: UIViewController, AskForFeedbackDelegate{
         sendToRateOutlet.premiumPopupContinueUI()
         askForFeedbackContainer.premiumPopupContainerUI()
         avatarImage.goldBackground()
-        feedbackTextView.normalButtonUI()
+        //feedbackTextView.normalButtonUI()
     }
     
     func setupAskForFeedbackDelegates(){
