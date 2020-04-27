@@ -54,13 +54,13 @@ class SpecificFact_UI: UIViewController, GADBannerViewDelegate {
     func setSpecificHeightUI() {
         switch factTitleText {
         case "Make your baby tired":
-            specificFactViewHeight.constant = CGFloat(1000)
+            specificFactViewHeight.constant = CGFloat(1100)
         case "Putting baby to bed":
-            specificFactViewHeight.constant = CGFloat(1050)
+            specificFactViewHeight.constant = CGFloat(1100)
         case "Make baby sleep longer":
-            specificFactViewHeight.constant = CGFloat(2400)
+            specificFactViewHeight.constant = CGFloat(1550)
         default:
-            specificFactViewHeight.constant = CGFloat(1000)
+            specificFactViewHeight.constant = CGFloat(1500)
         }
     }
 

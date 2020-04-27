@@ -1573,18 +1573,18 @@
             <objects>
                 <viewController storyboardIdentifier="SpecificFact_UI" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fkx-Ty-2fH" customClass="SpecificFact_UI" customModule="BabySleep" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pb5-wf-LWH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2412"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZM-hP-zlR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2392"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-Ij-88W">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2378"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbT-QE-Hf2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make Baby Sleep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7V-Ws-M2M">
                                                 <rect key="frame" x="0.0" y="30" width="414" height="30"/>
@@ -1596,7 +1596,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmM-py-p6h">
-                                                <rect key="frame" x="8" y="100" width="398" height="880"/>
+                                                <rect key="frame" x="8" y="100" width="398" height="1380"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1606,7 +1606,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="1Qh-iO-XGb"/>
+                                            <constraint firstAttribute="height" constant="1500" id="1Qh-iO-XGb"/>
                                             <constraint firstItem="F7V-Ws-M2M" firstAttribute="top" secondItem="bbT-QE-Hf2" secondAttribute="top" constant="30" id="AsM-Zx-eDB"/>
                                             <constraint firstItem="NmM-py-p6h" firstAttribute="leading" secondItem="bbT-QE-Hf2" secondAttribute="leading" constant="8" id="Hoa-ok-vHZ"/>
                                             <constraint firstAttribute="bottom" secondItem="NmM-py-p6h" secondAttribute="bottom" constant="20" symbolic="YES" id="d36-Oc-YWk"/>
@@ -1627,7 +1627,7 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeE-rd-EuS" customClass="GADBannerView">
-                                <rect key="frame" x="47" y="664" width="320" height="50"/>
+                                <rect key="frame" x="47" y="2268" width="320" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BhU-eT-4am"/>
@@ -1652,6 +1652,7 @@
                         <viewLayoutGuide key="safeArea" id="I59-cc-r5C"/>
                     </view>
                     <navigationItem key="navigationItem" id="IKr-yo-e17"/>
+                    <size key="freeformSize" width="414" height="2500"/>
                     <connections>
                         <outlet property="bannerView" destination="FeE-rd-EuS" id="UH6-zt-RAj"/>
                         <outlet property="bgGradientSpecificFactView" destination="lZM-hP-zlR" id="CWQ-tF-jah"/>
